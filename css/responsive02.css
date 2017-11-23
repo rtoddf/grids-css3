@@ -1,0 +1,74 @@
+// https://css-tricks.com/difference-explicit-implicit-grids/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-grid {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	/* repeat tracks */
+	grid-template-columns: repeat(4, 1fr);
+	// grid-template-columns: repeat(2, 120px 10% 200px);
+	/* auto-fill */
+	// grid-template-columns: repeat(auto-fill, 100px);
+	/* auto-fit */
+	// grid-template-columns: repeat(auto-fit, 100px);
+	// grid-template-rows: 4fr .5fr 4fr;
+	grid-gap: 20px;
+
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex-grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+
+	background: #f7f7f7;
+	color: #444;
+}
+
+.flex-grid-item[data-weight="full"]{
+    grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+
+@media (max-width: 600px) {
+	.flex-grid {
+		display: initial;
+		width: 100%;
+		padding: 0;
+	}
+
+	.flex-grid-item {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		border-left: none;
+		border-right: none;
+	}
+}

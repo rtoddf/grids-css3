@@ -1,0 +1,4 @@
+Layout Responsive Fluid Columns Using CSS
+https://egghead.io/lessons/css-introduction-to-css-columns
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_column-gap
+

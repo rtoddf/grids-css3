@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h3 {
+	margin-bottom: 20px;
+}
+
+pre {
+    margin-top: 20px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #444;
+}
+
+.grid-item {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+}

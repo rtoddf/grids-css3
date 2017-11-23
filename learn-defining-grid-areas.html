@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="css/base-learn.css" rel="stylesheet" />
+		<link href="css/learn-defining-grid-areas.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>Defining grid areas</h3>
+			<div class="grid">
+				<div class="grid-item header">Header</div>
+				<div class="grid-item sidebar">Sidebar</div>
+				<div class="grid-item content">Content</div>
+			</div>
+
+			<pre>
+.sidebar {
+	grid-area: sidebar;
+}
+
+.content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+}
+
+.grid {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		/* Repeating the name of an area indicates that the area spans that grid track.
+		Using a . or a sequence like .... indicates an empty track. */
+		"....... header  header"
+		"sidebar content content";
+}
+			</pre>
+		</div>
+	</body>
+</html>

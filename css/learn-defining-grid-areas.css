@@ -1,0 +1,20 @@
+.sidebar {
+	grid-area: sidebar;
+}
+
+.content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+}
+
+.grid {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		/* Repeating the name of an area indicates that the area spans that grid track.
+		Using a . or a sequence like .... indicates an empty track. */
+		"....... header  header"
+		"sidebar content content";
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="css/base-learn.css" rel="stylesheet" />
+		<link href="css/learn-placement-namedlines.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>Placement named lines</h3>
+			<div class="grid">
+				<div class="grid-item a">A</div>
+				<div class="grid-item b">B</div>
+				<div class="grid-item c">C</div>
+				<div class="grid-item d">D</div>
+			</div>
+
+			<pre>
+.grid {
+	grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px [col3-end];
+	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.a {
+	grid-column: col1-start / col3-start;
+	grid-row: row1-start ;
+}
+
+.b {
+	grid-column: col3-start ;
+	grid-row: row1-start / row2-end;
+}
+
+.c {
+	grid-column: col1-start;
+	grid-row: row2-start ;
+}
+
+.d {
+	grid-column: col2-start ;
+	grid-row: row2-start ;
+}
+			</pre>
+		</div>
+	</body>
+</html>
