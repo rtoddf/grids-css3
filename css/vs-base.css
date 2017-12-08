@@ -267,6 +267,10 @@ pre {
     grid-column: span 2;
 }
 
+/* testing something */
+[data-weight="full"] {
+    grid-column: span 4;
+}
 
 /* nested grids */
 .grid > .grid-item > .grid {
