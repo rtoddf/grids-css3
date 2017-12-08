@@ -12,3 +12,8 @@ document.querySelector('body').addEventListener('click', function(evt) {
         evt.target.parentNode.parentNode.classList.add('expanded-square');
     }
 }, true);
+
+
+function expand(){
+	document.getElementsByClassName('expanded-square').classList.remove('expanded-square');
+}
