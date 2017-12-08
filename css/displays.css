@@ -275,6 +275,36 @@ a:hover,
     overflow: hidden;
 }
 
+/* social links */
+.social-container {
+    display: flex;
+    
+}
+
+.social-container div {
+    flex: 1 1 0;
+    background: #555;
+    border-right: 1px solid #f7f7f7;
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+.social-container a {
+    display: block;
+    padding: 0.625rem;
+    background: #555;
+    color: #f7f7f7;
+    transition: all .3s ease;
+}
+
+.social-container a:hover {
+    background: #222;
+}
+/* end social links */
+
 
 
 @media (min-width : 601px) and (max-width : 1024px) {
