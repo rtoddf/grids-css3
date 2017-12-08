@@ -54,6 +54,7 @@ h2:after {
 
 h3 {
 	margin-bottom: 20px;
+    font-size: 1.17em;
 }
 
 h4 {
@@ -128,16 +129,23 @@ pre {
     color: #fff;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .grid {
     display: grid;
     grid-gap: 20px;
     // grid-template-rows: [row] auto [row] auto [row] auto [row];
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 25px;
 }
 
 .grid .grid {
     width: 100%;
+    padding: 0;
 }
 
 .grid-item {
