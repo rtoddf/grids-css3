@@ -201,6 +201,14 @@ img {
     font-weight: 300;
     line-height: 1rem;
 }
+
+figcaption {
+    margin: 5px auto 0;
+    color: #888;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
 /* end image-holder stuff */
 
 /* begin panel stuff */
@@ -393,6 +401,10 @@ ul li:last-child:after {
 }
 
 .card .caption {
+    width: 90%;
+}
+
+.card figcaption {
     width: 90%;
 }
 

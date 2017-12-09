@@ -22,6 +22,10 @@
     margin: 0 -20px 10px;
 }
 
+.panel figure {
+    margin: 0 -20px 10px;
+}
+
 .panel img {
 	border: none;
 }
@@ -67,6 +71,10 @@ a:hover,
 }
 
 .panel .caption {
+    padding: 0 20px;
+}
+
+.panel figcaption {
     padding: 0 20px;
 }
 
@@ -116,7 +124,19 @@ a:hover,
     width: auto;
 }
 
+[data-image-layout="square"] .tile.expanded figure img {
+    width: auto;
+}
+
 [data-image-layout="square"] .tile.expanded .image-holder img:hover {
+    width: auto;
+    height: 102%;
+    max-width: 102%;
+    max-height: 102%;
+}
+
+
+[data-image-layout="square"] .tile.expanded figure img:hover {
     width: auto;
     height: 102%;
     max-width: 102%;
@@ -126,6 +146,10 @@ a:hover,
 
 
 [data-image-layout="square"] .image-holder {
+    height: 100%;
+}
+
+[data-image-layout="square"] figure {
     height: 100%;
 }
 
@@ -139,7 +163,25 @@ a:hover,
     transition: all .6s ease;
 }
 
+[data-image-layout="square"] figure img {
+    width: 102%;
+    height: 102%;
+    max-width: 102%;
+    max-height: 102%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
 [data-image-layout="square"] .image-holder img:hover {
+    width: 110%;
+    height: 110%;
+    max-width: 110%;
+    max-height: 110%;
+    // margin: -5%;
+}
+
+[data-image-layout="square"] figure img:hover {
     width: 110%;
     height: 110%;
     max-width: 110%;
@@ -238,7 +280,25 @@ a:hover,
     margin: 0;
 }
 
+[data-overlay="rect"] figure {
+    margin: 0;
+}
+
 [data-overlay="rect"] .image-holder img {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: center;
+}
+
+[data-overlay="rect"] figure img {
     position: relative;
     top: auto;
     left: auto;

@@ -156,6 +156,13 @@ ul li a:hover {
     font-size: 12px;
     line-height: 14px;
 }
+
+figcaption {
+    margin: 5px auto 0;
+    color: #888;
+    font-size: 12px;
+    line-height: 14px;
+}
 /* end image-holder stuff */
 
 /* begin panel stuff */
@@ -218,6 +225,10 @@ a:hover,
 }
 
 .card .caption {
+    width: 90%;
+}
+
+.card figcaption {
     width: 90%;
 }
 
