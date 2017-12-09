@@ -318,6 +318,11 @@ a:hover,
 }
 /* end ads */
 
+/* testing something */
+[data-weight="full"] {
+    grid-column: span 4;
+}
+
 @media (min-width : 601px) and (max-width : 1024px) {
     .grid[data-col="4x2"][data-layout="1-4-1"] .grid-item:nth-child(1),
     .grid[data-col="4x2"][data-layout="4-1-4"] .grid-item:nth-child(1) {
