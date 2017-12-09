@@ -305,7 +305,18 @@ a:hover,
 }
 /* end social links */
 
+/* ads */
+.ad {
+    grid-column: span 4;
+    padding: 20px;
+    background: #666;
+    color: #fff;
+}
 
+.ad .flex-item {
+    background: transparent;
+}
+/* end ads */
 
 @media (min-width : 601px) and (max-width : 1024px) {
     .grid[data-col="4x2"][data-layout="1-4-1"] .grid-item:nth-child(1),
