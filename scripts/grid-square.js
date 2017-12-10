@@ -1,19 +1,22 @@
-// https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/
+$('.tile').on('click', function(){
+	$('.tile').removeClass('expanded-square')
+	$(this).addClass('expanded-square')
+})
 
-document.querySelector('body').addEventListener('click', function(evt) {
-    if ( evt.target.parentNode.parentNode.classList.contains('tile') ) {
+$('img').on('click', function(elem){
+	// if ($(this).parents('.expanded-square').length) {
+	// 	console.log('this: ', $(this).parent().parent())
+	// 	var something = $(this).parent().parent()
+		
+	// }
+	
 
-		var tileDivs = document.getElementsByClassName('tile');
-
-        for(var i=0; i<tileDivs.length; i++){
-        	tileDivs[i].classList.remove('expanded-square');
-        }
-
-        evt.target.parentNode.parentNode.classList.add('expanded-square');
-    }
-}, true);
+	$( ".tile" ).each(function( index, b ) {
+		if ($(this).parents('.expanded-square').length) {
+			$(this).removeClass('tile')
+		}
+		console.log($(this));
+	});
+})
 
 
-function expand(){
-	document.getElementsByClassName('expanded-square').classList.remove('expanded-square');
-}
