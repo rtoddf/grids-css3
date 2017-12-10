@@ -1,3 +1,22 @@
+/* https://gridbyexample.com/examples/ */
+
+/*
+rem sizes:
+40px = 2.5rem
+30px = 1.875rem
+20px = 1.25rem
+
+16px = 1rem
+15px = .9375rem
+14px = 0.875rem
+13px = 0.8125rem
+12px = 0.75rem
+10px = 0.625rem
+5px = 0.3125rem
+4px = 0.25rem
+
+1px = 0.0625rem */
+
 .grid[data-margin="0"] {
     grid-gap: 0;
 }
@@ -5,6 +24,49 @@
 .grid[data-margin="0"] img {
     border: none;
 }
+
+/* main feature */
+.mainFeature {
+
+}
+
+
+
+.mainFeature figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.mainFeature .content-holder {
+    position: absolute;
+    bottom: calc((100% - 110px) * -1);
+    padding: 20px;
+    background-image: linear-gradient(to top,#000 0,rgba(0,0,0,0) 100%);
+    color: #fff;
+    transition: all .4s ease;
+}
+
+
+
+.mainFeature:hover .content-holder {
+    // bottom: calc((100% - 100%) * -1);
+}
+
+.mainFeature .content-holder h2 {
+   text-align: left;
+}
+
+.mainFeature .content-holder h2:after {
+    height: 0;
+    margin-top: 0.3125rem;
+}
+
+.mainFeature .content-holder p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* end main feature */
 
 /* panel */
 .panel {
