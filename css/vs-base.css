@@ -1,4 +1,5 @@
-/* https://gridbyexample.com/examples/ */
+/* https://gridbyexample.com/examples/
+https://css-tricks.com/things-ive-learned-css-grid-layout/ */
 
 /*
 rem sizes:
@@ -61,6 +62,10 @@ h4 {
     margin-bottom: 10px;
 }
 
+h5 {
+    font-weight: normal;
+}
+
 p {
 	margin-bottom: 20px;
 }
@@ -109,6 +114,12 @@ ul li:last-child:after {
 
 pre {
     margin-top: 20px;
+}
+
+.column-header {
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -213,7 +224,9 @@ pre {
 	grid-template-columns: repeat(4, [col] 1fr);
 }
 
-.grid[data-col="5"] {
+.grid[data-col="5"],
+.grid[data-col="4-1"],
+.grid[data-col="3-2"] {
     grid-template-columns: repeat(5, [col] 1fr);
 }
 
@@ -275,7 +288,8 @@ pre {
 }
 
 /* 3-1-1-1 layout */
-.grid[data-col="3-1-1-1"] > .grid-item:nth-child(1) {
+.grid[data-col="3-1-1-1"] > .grid-item:nth-child(1),
+.grid[data-col="3-2"] > .grid-item:nth-child(1) {
     grid-column: span 3;
 }
 
@@ -285,7 +299,8 @@ pre {
 }
 
 /* 4-1-1-1-1 layout */
-.grid[data-col="4-1-1-1-1"] > .grid-item:nth-child(1) {
+.grid[data-col="4-1-1-1-1"] > .grid-item:nth-child(1),
+.grid[data-col="4-1"] > .grid-item:nth-child(1) {
     grid-column: span 4;
 }
 
@@ -300,7 +315,8 @@ pre {
 }
 
 /* 1-2-1 layout */
-.grid[data-col="1-2-1"] > .grid-item:nth-child(2) {
+.grid[data-col="1-2-1"] > .grid-item:nth-child(2),
+.grid[data-col="3-2"] > .grid-item:nth-child(2) {
     grid-column: span 2;
 }
 
