@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Interfaces - Grid vs Flexbox</title>
+		<link href="css/layouts.css" rel="stylesheet" />
+		<link href="css/displays.css" rel="stylesheet" />
+		<link href="css/lightbox02b.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="grid" data-col="3">
+
+				<article>
+					
+				</article>
+
+				<article data-image-layout="square">
+					<div class="tile square">
+						<figure>
+							<a href="#image1">
+								<img src="images/personalities-matt-bomer02.jpg">
+							</a>
+						</figure>
+						<div class="content-holder">
+							<h4>Matt Bomer</h4>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					
+				</article>
+
+
+			<div class="lightbox short-animate" id="image1">
+				<img class="long-animate" src="images/personalities-matt-bomer02.jpg"/>
+			</div>
+
+			<div id="lightbox-controls" class="short-animate">
+				<a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+			</div>
+
+		</div>
+	</body>
+</html>
