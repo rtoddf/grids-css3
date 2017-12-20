@@ -226,7 +226,7 @@ figure .filler {
     background: #222;
 }
 
-figure img {
+figure .filler > img {
     display: block;
     position: absolute;
     top: 25%;

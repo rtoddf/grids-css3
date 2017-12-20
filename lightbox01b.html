@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Interfaces - Grid vs Flexbox</title>
+		<link href="css/layouts.css" rel="stylesheet" />
+		<link href="css/displays.css" rel="stylesheet" />
+		<link href="css/lightbox01b.css" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="grid" data-col="3">
+
+				<article data-image-layout="square">
+					<div class="tile square">
+						<figure>
+							<a class="lightbox" href="#photo1">
+								<img src="images/personalities-matt-bomer02.jpg">
+							</a>
+						</figure>
+						<div class="content-holder">
+							<h4>Matt Bomer</h4>
+						</div>
+					</div>
+				</article>
+
+				<article data-image-layout="square">
+					<div class="tile square">
+						<figure>
+							<a class="lightbox" href="#photo2">
+								<img src="images/personalities-tommy-dorfman.jpg">
+							</a>
+						</figure>
+						<div class="content-holder">
+							<h4>Tommy Dorfman</h4>
+						</div>
+					</div>
+				</article>
+
+				<article data-image-layout="square">
+					<div class="tile square">
+						<figure>
+							<a class="lightbox" href="#photo3">
+								<img src="images/performance-eli-lieb.jpg">
+							</a>
+						</figure>
+						<div class="content-holder">
+							<h4>Eli Lieb</h4>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+
+
+
+		<div class="lightbox-target" id="photo1">
+			<figure>
+		   		<img src="images/personalities-matt-bomer02.jpg">
+		   	</figure>
+		   <a class="lightbox-close" href="#"></a>
+		</div>
+
+		<div class="lightbox-target" id="photo2">
+			<figure>
+		   		<img src="images/personalities-tommy-dorfman.jpg">
+		   	</figure>
+		   <a class="lightbox-close" href="#"></a>
+		</div>
+
+		<div class="lightbox-target" id="photo3">
+			<figure>
+		   		<img src="images/performance-eli-lieb.jpg">
+		   	</figure>
+		   <a class="lightbox-close" href="#"></a>
+		</div>
+
+
+
+
+	</body>
+</html>
