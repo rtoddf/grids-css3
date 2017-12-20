@@ -1,5 +1,5 @@
-$('a.lightbox').on('click', function(){
-	var imageSrc = $(this).find('img').attr('src')
+$('figure img').on('click', function(){
+	var imageSrc = $(this).attr('src')
 
 	$('.lightbox-target figure img').attr('src', imageSrc)
 	$('.lightbox-target').addClass('open')

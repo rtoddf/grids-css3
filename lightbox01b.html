@@ -16,14 +16,12 @@
 
 	<body>
 		<div class="container">
-			<div class="grid" data-col="3">
+			<div class="grid" data-col="4" data-margin="0">
 
 				<article data-image-layout="square">
 					<div class="tile square">
 						<figure>
-							<a class="lightbox" href="javacript:void(0)" data-thumb="p-1">
-								<img src="images/personalities-charlie-carver.jpg">
-							</a>
+							<img src="images/personalities-charlie-carver.jpg" data-thumb="p-1">
 						</figure>
 						<div class="content-holder">
 							<h4>Charlie Carver</h4>
@@ -34,9 +32,7 @@
 				<article data-image-layout="square">
 					<div class="tile square">
 						<figure>
-							<a class="lightbox" href="javacript:void(0)" data-thumb="p-2">
-								<img src="images/personalities-tommy-dorfman.jpg">
-							</a>
+							<img src="images/personalities-tommy-dorfman.jpg" data-thumb="p-2">
 						</figure>
 						<div class="content-holder">
 							<h4>Tommy Dorfman</h4>
@@ -47,9 +43,7 @@
 				<article data-image-layout="square">
 					<div class="tile square">
 						<figure>
-							<a class="lightbox" href="javacript:void(0)" data-thumb="p-3">
-								<img src="images/performance-eli-lieb.jpg">
-							</a>
+							<img src="images/performance-eli-lieb.jpg" data-thumb="p-3">
 						</figure>
 						<div class="content-holder">
 							<h4>Eli Lieb</h4>
@@ -60,9 +54,7 @@
 				<article data-image-layout="square">
 					<div class="tile square">
 						<figure>
-							<a class="lightbox" href="javacript:void(0)" data-thumb="p-4">
-								<img src="images/personalities-jonathan-groff.jpg">
-							</a>
+							<img src="images/personalities-jonathan-groff.jpg" data-thumb="p-4">
 						</figure>
 						<div class="content-holder">
 							<h4>Jonathan Groff</h4>
@@ -74,9 +66,11 @@
 
 		<div class="lightbox-target" id="p-1">
 			<figure>
-		   		<img src="">
+				<span class="filler">
+		   			<img src="">
+		   		</span>
 		   	</figure>
-		   <a class="lightbox-close" href="javacript:void(0)"></a>
+		   <div class="lightbox-close"></div>
 		</div>
 
 		<script src="scripts/lib/jquery-3.2.1.min.js"></script>
