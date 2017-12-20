@@ -44,7 +44,8 @@ a.lightbox img {
 }
 
 .lightbox-target figure img {
-	width: 80%;
+	width: inherit;
+	height: 90%;
 	margin: auto;
 	border: 3px solid white;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
