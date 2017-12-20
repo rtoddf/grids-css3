@@ -102,18 +102,18 @@ a.lightbox-close:after {
 }
 
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-.lightbox-target:target {
+.lightbox-target.open {
 	opacity: 1;
 	top: 0;
 	bottom: 0;
 }
 
-.lightbox-target:target figure {
+.lightbox-target.open figure {
 	display: flex;
 	max-height: 100%;
 	max-width: 100%;
 }
 
-.lightbox-target:target a.lightbox-close {
+.lightbox-target.open a.lightbox-close {
 	top: 0px;
 }

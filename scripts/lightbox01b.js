@@ -1,12 +1,11 @@
 $('a.lightbox').on('click', function(){
-	var whichImage = $(this).attr('data-thumb')
 	var imageSrc = $(this).find('img').attr('src')
 
-	console.log('whichImage: ', whichImage)
-	console.log('imageSrc: ', imageSrc)
+	$('.lightbox-target figure img').attr('src', imageSrc)
+	$('.lightbox-target').addClass('open')
+})
 
-	var whichLightbox = $('.lightbox-target#' + whichImage + ' figure')
-
-	whichLightbox.find('img').attr('src', imageSrc)
+$('.lightbox-close').on('click', function(){
+	$('.lightbox-target').removeClass('open');
 })
 
