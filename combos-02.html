@@ -8,24 +8,22 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - Grid vs Flexbox</title>
-		<link href="css/vs-base.css" rel="stylesheet" />
+		<link href="css/layouts.css" rel="stylesheet" />
 		<link href="css/displays.css" rel="stylesheet" />
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body data-theme="vs">
+	<body data-theme="lightbox">
 		<div class="container">
 
-			<div class="grid" data-col="1-2-1">
-				<div class="flex-grid-item ad">
-					<div class="flex-item">
-						This is an ad
-					</div>
-				</div>
+			<div class="grid">
+				<article class="ad">
+					This is an ad
+				</article>
 			</div>
 			
 			<div class="grid" data-col="1-2-1">
-				<div class="grid-item panel">
+				<article class="panel">
 					<h2>Movies</h2>
 					<ul>
 						<li>
@@ -70,8 +68,8 @@
 							</div>
 						</li>
 					</ul>
-				</div>
-				<div class="grid-item panel">
+				</article>
+				<article class="panel">
 					<h3>Westworld is an American science fiction western thriller</h3>
 					<figure>
 						<span class="filler">
@@ -96,8 +94,8 @@
 						<div><a href="javascript:void(0)">Instagram</a></div>
 						<div><a href="javascript:void(0)">Google</a></div>
 					</div>
-				</div>
-				<div class="grid-item panel">
+				</article>
+				<article class="panel">
 					<h3>Why do we even need weapons anyway? We have her</h3>
 					<figure>
 						<span class="filler">
@@ -112,10 +110,10 @@
 						</span>
 						<figcaption>Deals with attempts of the characters to return to normal. (photo credit)</figcaption>
 					</figure>
-				</div>
+				</article>
 			</div>
 			<div class="grid" data-col="1-2-1">
-				<div class="grid-item panel">
+				<article class="panel">
 					<h3>A bug is never just a mistake</h3>
 					<figure>
 						<span class="filler">
@@ -136,8 +134,8 @@
 						<div><a href="javascript:void(0)">Instagram</a></div>
 						<div><a href="javascript:void(0)">Google</a></div>
 					</div>
-				</div>
-				<div class="grid-item panel">
+				</article>
+				<article class="panel">
 					<h3>American Gods</h3>
 					<figure>
 						<span class="filler">
@@ -153,8 +151,8 @@
 						<div><a href="javascript:void(0)">Instagram</a></div>
 						<div><a href="javascript:void(0)">Google</a></div>
 					</div>
-				</div>
-				<div class="grid-item panel">
+				</article>
+				<article class="panel">
 					<h3>Seven minutes of heaven with Archie Andrews</h3>
 					<figure>
 						<span class="filler">
@@ -170,12 +168,12 @@
 						<div><a href="javascript:void(0)">Instagram</a></div>
 						<div><a href="javascript:void(0)">Google</a></div>
 					</div>
-				</div>
+				</article>
 			</div>
 
 
 			<div class="grid" data-col="1-2-1">
-				<div class="grid-item panel">
+				<article class="panel">
 					<h2>Actors</h2>
 					<ul>
 						<li>
@@ -203,9 +201,9 @@
 							</div>
 						</li>
 					</ul>
-				</div>
+				</article>
 
-				<div class="grid-item">
+				<article>
 				 
 					<div class="tease-cap">
 						<h3>Gallery</h3>
@@ -216,7 +214,7 @@
 
 					<div data-layout="grid">
 						<div class="grid" data-col="4" data-margin="0">
-							<div class="grid-item" data-image-layout="square">
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-adam-lambert.jpg">
@@ -225,8 +223,8 @@
 										<h4>Adam Lambert</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-adele.jpg">
@@ -235,8 +233,8 @@
 										<h4>Adele</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-bruno-mars.jpg">
@@ -245,8 +243,8 @@
 										<h4>Bruno Mars</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-charlie-puth.jpg">
@@ -255,8 +253,8 @@
 										<h4>Charlie Puth</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-ed-sheeran.jpg">
@@ -265,8 +263,8 @@
 										<h4>Ed Sheeran</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-halsey.jpg">
@@ -275,8 +273,8 @@
 										<h4>Halsey</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">>
+							</article>
+							<article data-image-layout="square">>
 								<div class="tile">
 									<figure>
 										<img src="images/music-imagine-dragons.jpg">
@@ -285,8 +283,8 @@
 										<h4>Imagine Dragons</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-lady-gaga.jpg">
@@ -295,8 +293,8 @@
 										<h4>Lady Gaga</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-meghan-trainor.jpg">
@@ -305,9 +303,9 @@
 										<h4>Meghan Trainor</h4>
 									</div>
 								</div>
-							</div>
+							</article>
 
-							<div class="grid-item" data-image-layout="square">
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-the-chainsmokers.jpg">
@@ -316,8 +314,8 @@
 										<h4>The Chainsmokers</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-the-script.jpg">
@@ -326,8 +324,8 @@
 										<h4>The Script</h4>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item" data-image-layout="square">
+							</article>
+							<article data-image-layout="square">
 								<div class="tile">
 									<figure>
 										<img src="images/music-p!nk.jpg">
@@ -336,7 +334,7 @@
 										<h4>P!nk</h4>
 									</div>
 								</div>
-							</div>
+							</article>
 						</div>
 					</div>
 				</div>

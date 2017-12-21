@@ -44,6 +44,23 @@ h2, h3 {
     font-size: 1.17rem;
 }
 
+// for later
+// h2 {
+//     font-size: 1.17rem;
+//     text-align: center;
+//     text-transform: uppercase;;
+// }
+
+// h2:after {
+//     width: 100%;
+//     background-color: #D5D5D5;
+//     content: "";
+//     display: block;
+//     height: 0.25rem;
+//     margin-top: 0.875rem;
+//     margin-bottom: 1.0625rem;
+// }
+
 p {
 	margin-bottom: 1.25rem;
 }
