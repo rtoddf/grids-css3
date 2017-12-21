@@ -48,6 +48,11 @@ p {
 	margin-bottom: 1.25rem;
 }
 
+[data-theme="lightbox"] {
+    background: #efefef;
+    color: #444;
+}
+
 [data-theme="lightbox"] .container {
      width: 100%;
 }
