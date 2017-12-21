@@ -48,6 +48,10 @@ p {
 	margin-bottom: 1.25rem;
 }
 
+[data-theme="lightbox"] .container {
+     width: 100%;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
