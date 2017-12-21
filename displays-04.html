@@ -8,37 +8,22 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - Grid vs Flexbox</title>
-		<link href="css/vs-base.css" rel="stylesheet" />
+		<link href="css/layouts.css" rel="stylesheet" />
 		<link href="css/displays.css" rel="stylesheet" />
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body data-theme="vs">
+	<body data-theme="lightbox">
 		<div class="container">
 
 			<div class="grid" data-col="1-2-1">
-				<div class="flex-grid-item ad">
-					<div class="flex-item">
-						This is an ad
-					</div>
-				</div>
+				<article class="ad">
+					This is an ad
+				</article>
 			</div>
 			
 			<div class="grid" data-col="2" data-margin="0">
-				<div class="grid-item mainFeature">
-					<figure>
-						<span class="filler">
-							<img src="images/tv-westworld01.jpg" />
-						</span>
-						<div class="content-holder">
-							<h2>This is the Headline</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est mauris, sodales a ex eget, posuere imperdiet lectus. Etiam tempor finibus lorem at pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-							<p>Integer non euismod dui. Integer ac mollis lectus, vel consectetur quam. Aenean nec turpis et massa viverra tincidunt quis id dui. Aenean tempus accumsan suscipit. Praesent pretium dignissim eros.</p>
-<!-- 							In dictum, purus eget bibendum scelerisque, neque erat faucibus nisi, vitae accumsan nunc risus id libero. Suspendisse finibus neque eget purus commodo, ac semper libero dictum. Sed vel velit vel neque cursus eleifend eu ut felis. Aliquam volutpat at odio non porttitor. Sed ut arcu nec lorem tempus tristique. Duis laoreet tempus turpis, non malesuada mi fermentum non. Donec quam nisi, fermentum eu interdum a, varius ut nisl. Vivamus sem libero, tempor et felis nec, tempus pharetra diam. -->
-						</div>
-					</figure>
-				</div>
-				<div class="grid-item mainFeature">
+				<article class="mainFeature">
 					<figure>
 						<span class="filler">
 							<img src="images/tv-westworld01.jpg" />
@@ -49,7 +34,19 @@
 							<p>Integer non euismod dui. Integer ac mollis lectus, vel consectetur quam. Aenean nec turpis et massa viverra tincidunt quis id dui. Aenean tempus accumsan suscipit. Praesent pretium dignissim eros.</p>
 						</div>
 					</figure>
-				</div>
+				</article>
+				<article class="mainFeature">
+					<figure>
+						<span class="filler">
+							<img src="images/tv-westworld01.jpg" />
+						</span>
+						<div class="content-holder">
+							<h2>This is the Headline</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est mauris, sodales a ex eget, posuere imperdiet lectus. Etiam tempor finibus lorem at pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<p>Integer non euismod dui. Integer ac mollis lectus, vel consectetur quam. Aenean nec turpis et massa viverra tincidunt quis id dui. Aenean tempus accumsan suscipit. Praesent pretium dignissim eros.</p>
+						</div>
+					</figure>
+				</article>
 			</div>
 		</div>
 		<script src="scripts/lib/jquery-3.2.1.min.js"></script>

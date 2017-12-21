@@ -48,6 +48,10 @@ p {
 	margin-bottom: 1.25rem;
 }
 
+ul {
+    list-style: none;
+}
+
 [data-theme="lightbox"] {
     background: #efefef;
     color: #444;
