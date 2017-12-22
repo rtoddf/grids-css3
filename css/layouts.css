@@ -75,6 +75,42 @@ ul {
     list-style: none;
 }
 
+/* index */
+[data-theme="index"] ul {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+[data-theme="index"] ul li {
+    
+    border: 1px solid #222;
+    border-bottom: none;
+}
+
+[data-theme="index"] ul li:last-child {
+    border-bottom: 1px solid #222;
+}
+
+[data-theme="index"] ul li a {
+    display: block;
+    padding: 5px;
+    color: #222;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+[data-theme="index"] ul li a:hover {
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+}
+
+[data-theme="index"] ul li:after {
+    display: none;
+}
+
+/* end index */
+
 [data-theme="lightbox"] {
     background: #efefef;
     color: #444;
