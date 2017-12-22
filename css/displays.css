@@ -302,6 +302,35 @@ a:hover,
     // margin: -5%;
 }
 
+
+
+.tile.square img {
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+
+    width: 102%;
+    height: 102%;
+    max-width: 102%;
+    max-height: 102%;
+    
+    text-align: center;
+    cursor: pointer;
+    transform: translate(-50%, -25%);
+    transition: all .6s ease;
+}
+
+.lightbox .grid,
+.lightbox article,
+.lightbox figure,
+.lightbox .filler {
+    height: 100%;
+}
+
+
+
 [data-image-layout="square"] .content-holder {
     position: absolute;
     bottom: 0;
