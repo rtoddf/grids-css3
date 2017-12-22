@@ -8,38 +8,36 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - Grid vs Flexbox</title>
-		<link href="css/vs-base.css" rel="stylesheet" />
+		<link href="css/layouts.css" rel="stylesheet" />
 		<link href="css/displays.css" rel="stylesheet" />
 		<link href="css/decorators.css" rel="stylesheet" />
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
 	</head>
 
-	<body data-theme="vs">
+	<body data-theme="lightbox">
 		<div class="container">
-			<div class="grid" data-col="1-2-1">
-				<div class="flex-grid-item ad">
-					<div class="flex-item">
-						This is an ad
-					</div>
-				</div>
+			<div class="grid">
+				<article class="ad">
+					This is an ad
+				</article>
 			</div>
 
 			<hr class="scotch-rule">
 			<section>
 				<h3>Headline for Section</h3>
 				<div class="grid" data-col="4-1">
-					<div class="grid-item">
-						<article>
-							<figure>
-								<span class="filler">
-									<img src="images/tv-westworld02.jpg" />
-								</span>
-							</figure>
-							<h4>Westworld is an American science fiction western thriller</h4>
-						</article>
-					</div>
-					<div class="grid-item">
+
+					<article>
+						<figure>
+							<span class="filler">
+								<img src="images/tv-westworld02.jpg" />
+							</span>
+						</figure>
+						<h4>Westworld is an American science fiction western thriller</h4>
+					</article>
+
+					<article>
 						<div class="column b-column">
 							<div class="video-playlist-container">
 								<ul class="video-playlist">
@@ -106,7 +104,7 @@
 								</ul>
 							</div>
 						</div>
-					</div>
+					</article>
 				</div>
 				
 			</section>
@@ -114,91 +112,87 @@
 			<section>
 				<h3>Headline for Section</h3>
 				<div class="grid" data-col="6">
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-joseph-altuzarra.jpg" />
-									</span>
-								</figure>
-								<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-							</a>
-						</article>
-					</div>
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-ryan-reynolds.jpg" />
-									</span>
-								</figure>
-							</a>
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-joseph-altuzarra.jpg" />
+								</span>
+							</figure>
 							<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-						</article>
-					</div>
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-xavier-dolan.jpg" />
-									</span>
-								</figure>
-								<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-							</a>
-						</article>
-					</div>
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-chris-mears.jpg" />
-									</span>
-								</figure>
-								<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-							</a>
-						</article>
-					</div>
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-darren-criss.jpg" />
-									</span>
-								</figure>
-								<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-							</a>
-						</article>
-					</div>
-					<div class="grid-item">
-						<article>
-							<div class="column-header">personalities</div>
-							<a href="javascript:void(0)">
-								<figure>
-									<span class="filler">
-										<img src="images/personalities-ryan-reynolds.jpg" />
-									</span>
-								</figure>
-								<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
-							</a>
-						</article>
-					</div>
+						</a>
+					</article>
+
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-ryan-reynolds.jpg" />
+								</span>
+							</figure>
+						</a>
+						<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
+					</article>
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-xavier-dolan.jpg" />
+								</span>
+							</figure>
+							<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
+						</a>
+					</article>
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-chris-mears.jpg" />
+								</span>
+							</figure>
+							<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
+						</a>
+					</article>
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-darren-criss.jpg" />
+								</span>
+							</figure>
+							<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
+						</a>
+					</article>
+
+					<article>
+						<div class="column-header">personalities</div>
+						<a href="javascript:void(0)">
+							<figure>
+								<span class="filler">
+									<img src="images/personalities-ryan-reynolds.jpg" />
+								</span>
+							</figure>
+							<h5>Nulla lorem dui, posuere ac eros consequat, pretium luctus massa.</h5>
+						</a>
+					</article>
+
 				</div>
 			</section>
 			<hr class="scotch-rule">
 			<section>
 				<h3>Headline for Section</h3>
 				<div class="grid" data-col="1-1-2">
-					<div class="grid-item panel">
+					<article class="panel">
 						<h3>Entertainment</h3>
 						<div class="image-holder">
 							<span class="filler">
@@ -213,8 +207,8 @@
 							<li><a href="javascript:void(0)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo nec mi viverra euismod.</a></li>
 							<li><a href="javascript:void(0)">Donec elit lectus, placerat pulvinar lacus nec, eleifend congue metus.</a></li>
 						</ul>
-					</div>
-					<div class="grid-item panel">
+					</article>
+					<article class="panel">
 						<h3>Personalities</h3>
 						<div class="image-holder">
 							<span class="filler">
@@ -229,8 +223,8 @@
 							<li><a href="javascript:void(0)">Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.</a></li>
 							<li><a href="javascript:void(0)">Cras semper lobortis commodo.</a></li>
 						</ul>
-					</div>
-					<div class="grid-item panel">
+					</article>
+					<article class="panel">
 						<h3>Comic Books</h3>
 						<div class="image-holder">
 							<span class="filler">
@@ -245,16 +239,14 @@
 							<li><a href="javascript:void(0)">Cras semper lobortis commodo.</a></li>
 							<li><a href="javascript:void(0)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo nec mi viverra euismod.</a></li>
 						</ul>
-					</div>
+					</article>
 				</div>
 			</section>
 			<hr class="scotch-rule">
-			<div class="grid" data-col="1-2-1">
-				<div class="flex-grid-item ad">
-					<div class="flex-item">
-						This is an ad
-					</div>
-				</div>
+			<div class="grid">
+				<article class="ad">
+					This is an ad
+				</article>
 			</div>
 		</div>
 	</body>
