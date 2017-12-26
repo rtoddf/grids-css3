@@ -6,4 +6,3 @@ $('figure img').on('click', function(){
 $('.lightbox-close').on('click', function(){
 	$('.lightbox').removeClass('open');
 })
-
