@@ -8,21 +8,41 @@
 		<meta name="author" content="">
 
 		<title>rtodd - CSS3 Grids</title>
-		<link href="css/base-learn.css" rel="stylesheet" />
-		<link href="css/learn-linebased.css" rel="stylesheet" />
+		<link href="../css/base-learn.css" rel="stylesheet" />
+		<link href="../css/learn-linebasedspanning.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div class="container">
-			<h3>Grid - Line Based</h3>
+			<h3>Grid - Line Based Spanning Tracks</h3>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
 				<div class="grid-item c">C</div>
 				<div class="grid-item d">D</div>
-				<div class="grid-item e">E</div>
-				<div class="grid-item f">F</div>
 			</div>
+
+			<pre>
+.a {
+	grid-column: 1 / 3;
+	grid-row: 1;
+}
+
+.b {
+	grid-column: 3 ;
+	grid-row: 1 / 3;
+}
+
+.c {
+	grid-column: 1 ;
+	grid-row: 2 ;
+}
+
+.d {
+	grid-column: 2;
+	grid-row: 2;
+}
+			</pre>
 		</div>
 	</body>
 </html>

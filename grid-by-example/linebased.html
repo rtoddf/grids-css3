@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/base-learn.css" rel="stylesheet" />
+		<link href="../css/grid-by-example/linebased.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>Grid - Line Based</h3>
+			<div class="grid">
+				<div class="grid-item a">A</div>
+				<div class="grid-item b">B</div>
+				<div class="grid-item c">C</div>
+				<div class="grid-item d">D</div>
+				<div class="grid-item e">E</div>
+				<div class="grid-item f">F</div>
+			</div>
+
+
+<pre>
+.grid {
+	grid-template-columns: auto auto auto;
+}
+
+.a {
+	/*shorthand*/
+	grid-area: 1 / 2 / 2 / 3;
+	background-color: orange;
+	/*
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+	*/
+}
+.b {
+	/*shorthand*/
+	grid-area: 2 / 2 / 3 / 3;
+	background-color: purple;
+
+	/*
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 2;
+		grid-column-end: 3;
+	*/
+}
+.c {
+	/*shorthand*/
+	grid-area: 2 / 3 / 3 / 4;
+	background-color: #003264;
+	
+	/* longhand
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 3;
+		grid-column-end: 4;
+	*/
+}
+
+.d {
+	/* mediumhand */
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	background-color: #ae0000;
+
+	/* longhand
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		
+	*/
+}
+
+.e {
+	/* mediumhand */
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	background-color: #baba71;
+
+	/* longhand
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 2;
+	*/
+}
+
+.f {
+	/* mediumhand */
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
+	background-color: #ef6817;
+
+	/* longhand
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 3;
+		grid-column-end: 4;
+	*/
+}
+
+			</pre>
+
+
+		</div>
+	</body>
+</html>
