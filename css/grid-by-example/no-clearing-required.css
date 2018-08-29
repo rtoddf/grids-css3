@@ -1,0 +1,24 @@
+.sidebar {
+	grid-area: sidebar;
+}
+
+.content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"....... header header"
+	"sidebar content content"
+	"footer  footer  footer";
+}

@@ -9,17 +9,19 @@
 
 		<title>rtodd - CSS3 Grids</title>
 		<link href="../css/base-learn.css" rel="stylesheet" />
-		<link href="../css/grid-by-example/defining-grid-areas.css" rel="stylesheet" />
+		<link href="../css/grid-by-example/no-clearing-required.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div class="container">
-			<h3>Defining grid areas</h3>
-			<p>We can create named areas on the grid to put content into.</p>
+			<h3>No clearing required</h3>
+			<p>Items sit in their own rows on the grid therefore we do not need to clear them as with floats.</p>
 			<div class="grid">
 				<div class="grid-item header">Header</div>
 				<div class="grid-item sidebar">Sidebar</div>
-				<div class="grid-item content">Content</div>
+				<div class="grid-item content">Content
+		    		<br /> More content than we had before so this column is now quite tall.</div>
+				<div class="grid-item footer">Footer</div>
 			</div>
 
 			<pre>
@@ -35,13 +37,17 @@
 	grid-area: header;
 }
 
+.footer {
+    grid-area: footer;
+}
+
 .grid {
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
-		/* Repeating the name of an area indicates that the area spans that grid track.
-		Using a . or a sequence like .... indicates an empty track. */
-		"....... header  header"
-		"sidebar content content";
+	"....... header header"
+	"sidebar content content"
+	"footer  footer  footer";
 }
 			</pre>
 		</div>
