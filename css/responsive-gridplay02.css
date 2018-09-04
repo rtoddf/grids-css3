@@ -1,0 +1,30 @@
+/*
+rem sizes:
+40px = 2.5rem
+30px = 1.875rem
+25px = 1.5625rem
+20px = 1.25rem
+
+16px = 1rem
+15px = .9375rem
+14px = 0.875rem
+13px = 0.8125rem
+12px = 0.75rem
+10px = 0.625rem
+6px = 0.375rem
+5px = 0.3125rem
+4px = 0.25rem
+
+1px = 0.0625rem */
+
+/*.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}*/
+
+article {
+    display: grid;
+}
+
+article img {
+    order: -1;
+}
