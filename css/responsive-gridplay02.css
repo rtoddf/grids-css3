@@ -17,11 +17,20 @@ rem sizes:
 
 1px = 0.0625rem */
 
+.grid {
+    display: grid;
+    display: -ms-grid;
+    grid-gap: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5625rem;
+}
+
 /*.grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }*/
 
-article {
+/*article {
     display: grid;
     display: -ms-grid;
 }
@@ -29,4 +38,4 @@ article {
 article img {
     order: -1;
     -ms-order: -1;
-}
+}*/
