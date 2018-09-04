@@ -23,8 +23,10 @@ rem sizes:
 
 article {
     display: grid;
+    display: -ms-grid;
 }
 
 article img {
     order: -1;
+    -ms-order: -1;
 }
