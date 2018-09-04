@@ -17,6 +17,30 @@ rem sizes:
 
 1px = 0.0625rem */
 
+html {
+    box-sizing: border-box;
+    height: 100%;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #222;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .grid {
     display: grid;
     display: -ms-grid;
@@ -24,6 +48,11 @@ rem sizes:
     width: 100%;
     margin: 0 auto;
     padding: 1.5625rem;
+}
+
+[data-col="2"] {
+    grid-template-columns: repeat(2, [col] 1fr);
+    -ms-grid-columns: repeat(2, [col] 1fr);
 }
 
 /*.grid {
