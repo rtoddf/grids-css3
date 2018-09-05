@@ -14,7 +14,9 @@
 
 	<body>
 		<div class="container">
-			<h3>Placement named lines</h3>
+			<h3>Line-based placement named lines</h3>
+			<p>We can name lines rather than targeting them by number. Name the line inside brackets. In the code below you can see that I name the very first column line col1-start then comes the 100 pixel first column track. Having named the lines you can use the names, rather than numbers.</p>
+			<p>You always have the line numbers to use - even if you name some or all of your lines.</p>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
@@ -24,28 +26,42 @@
 
 			<pre>
 .grid {
-	grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px [col3-end];
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+	
+	-ms-grid-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col3-end]; 
+	grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col3-end];
+	-ms-grid-rows: [row1-start] auto [row2-start] auto [row2-end];
 	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 }
 
 .a {
+	-ms-grid-column: col1-start / col3-start;
+	-ms-grid-row: row1-start;
 	grid-column: col1-start / col3-start;
-	grid-row: row1-start ;
+	grid-row: row1-start;
 }
 
 .b {
-	grid-column: col3-start ;
+	-ms-grid-column: col3-start;
+	-ms-grid-row: row1-start / row2-end;
+	grid-column: col3-start;
 	grid-row: row1-start / row2-end;
 }
 
 .c {
+	-ms-grid-column: col1-start;
+	-ms-grid-row: row2-start;
 	grid-column: col1-start;
-	grid-row: row2-start ;
+	grid-row: row2-start;
 }
 
 .d {
+	-ms-grid-column: col2-start ;
+	-ms-grid-row: row2-start;
 	grid-column: col2-start ;
-	grid-row: row2-start ;
+	grid-row: row2-start;
 }
 			</pre>
 		</div>

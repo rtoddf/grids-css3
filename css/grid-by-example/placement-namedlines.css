@@ -1,24 +1,38 @@
 .grid {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+	
+	-ms-grid-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col3-end]; 
 	grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col3-end];
+	-ms-grid-rows: [row1-start] auto [row2-start] auto [row2-end];
 	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 }
 
 .a {
+	-ms-grid-column: col1-start / col3-start;
+	-ms-grid-row: row1-start;
 	grid-column: col1-start / col3-start;
-	grid-row: row1-start ;
+	grid-row: row1-start;
 }
 
 .b {
-	grid-column: col3-start ;
+	-ms-grid-column: col3-start;
+	-ms-grid-row: row1-start / row2-end;
+	grid-column: col3-start;
 	grid-row: row1-start / row2-end;
 }
 
 .c {
+	-ms-grid-column: col1-start;
+	-ms-grid-row: row2-start;
 	grid-column: col1-start;
-	grid-row: row2-start ;
+	grid-row: row2-start;
 }
 
 .d {
+	-ms-grid-column: col2-start ;
+	-ms-grid-row: row2-start;
 	grid-column: col2-start ;
-	grid-row: row2-start ;
+	grid-row: row2-start;
 }

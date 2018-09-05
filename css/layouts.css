@@ -151,6 +151,7 @@ article {
 /* columns */
 .grid,
 .grid[data-col="1"] {
+    -ms-grid-columns: repeat(1, [col] 1fr);
 	grid-template-columns: repeat(1, [col] 1fr);
 }
 
@@ -162,6 +163,7 @@ article {
 [data-col="3"],
 [data-col="1-2"],
 [data-col="2-1"] {
+    -ms-grid-columns: repeat(3, [col] 1fr);
 	grid-template-columns: repeat(3, [col] 1fr);
 }
 
