@@ -15,6 +15,7 @@
 	<body>
 		<div class="container">
 			<h3>Grid - Line Based Spanning Tracks with Span Keyword</h3>
+			<p>We can also span using the span keyword. This example creates the same layout as the one in example 5. I am using the span keyword rather than targeting the Grid Line by number. I am also using the defaults for row and column end, which is to span 1.</p>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
@@ -23,22 +24,33 @@
 			</div>
 
 			<pre>
+.grid {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+}
+
 .a {
+	-ms-grid-column: 1 / span 2;
+	-ms-grid-row: 1;
 	grid-column: 1 / span 2;
 	grid-row: 1;
 }
-
 .b {
-	grid-column: 3 ;
+	-ms-grid-column: 3;
+	-ms-grid-row: 1 / span 2;
+	grid-column: 3;
 	grid-row: 1 / span 2;
 }
-
 .c {
-	grid-column: 1 ;
-	grid-row: 2 ;
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;
+	grid-column: 1;
+	grid-row: 2;
 }
-
 .d {
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
 	grid-column: 2;
 	grid-row: 2;
 }

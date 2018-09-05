@@ -9,14 +9,14 @@
 
 		<title>rtodd - CSS3 Grids</title>
 		<link href="../css/base-learn.css" rel="stylesheet" />
-		<link href="../css/grid-by-example/autoflow-columns.css" rel="stylesheet" />
+		<link href="../css/grid-by-example/auto-placement.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div class="container">
-			<h3>Grid auto-flow column</h3>
-			<p>The default behavior of Grid Auto Flow is to layout the elements by row, working along the row until there are no more slots then moving on to the next row. If a row is not declared then an implicit grid track will be created to hold the items.</p>
-			<p>You can change this behavior by using the grid-auto-flow property. The default value is row but you can also specify column. The elements will then be laid out column by column, adding new columns if needed.</p>
+			<h3>Grid auto-placement</h3>
+			<p>If you declare a Grid on an element and do not position the child elements then the auto-placememt algorithm dictates what the browser should do about those unplaced grid items.</p>
+			<p>In this example I have a set of 12 boxes. I’ve used nth-child to switch the background color on the even boxes to make this example clear. I have declared a Grid and created rows and columns but not positioned any of the children. As you can see the boxes all lay out on the Grid despite having no placement assigned to them.</p>
 			<div class="grid">
 				<div class="grid-item">1</div>
 				<div class="grid-item">2</div>
@@ -46,9 +46,6 @@
 
 	-ms-grid-columns: repeat(6, 1fr);
 	grid-template-columns: repeat(6, 1fr);
-	-ms-grid-rows: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-auto-flow: column;
 }
 
 .grid-item:nth-child(even) {
