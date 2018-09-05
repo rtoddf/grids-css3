@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/base-learn.css" rel="stylesheet" />
+		<link href="../css/grid-by-example/linebased-shorthand.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>Line-based placement shorthand - grid-row and grid-column</h3>
+			<p>We can achieve the same result as in example 2 using a shorthand syntax declaring the start and end values at once. Values are separated with a / and again it would be valid to omit the / and the end value as we are spanning only one track.</p>
+			<div class="grid">
+				<div class="grid-item a">A</div>
+				<div class="grid-item b">B</div>
+				<div class="grid-item c">C</div>
+				<div class="grid-item d">D</div>
+				<div class="grid-item e">E</div>
+				<div class="grid-item f">F</div>
+			</div>
+
+
+<pre>
+.grid {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+}
+
+.a {
+	-ms-grid-column: 2 / 3;
+	-ms-grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	background-color: orange;
+}
+.b {
+	-ms-grid-column: 2 / 3;
+	-ms-grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	background-color: purple;
+}
+.c {
+	-ms-grid-column: 3 / 4;
+	-ms-grid-row: 2 / 3;
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+	background-color: #003264;
+}
+.d {
+	-ms-grid-column: 1 / 2;
+	-ms-grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background-color: #ae0000;
+}
+.e {
+	-ms-grid-row: 2 / 3;
+	-ms-grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	background-color: #baba71;
+}
+.f {
+	-ms-grid-row: 1 / 2;
+	-ms-grid-column: 3 / 4;
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
+	background-color: #ef6817;
+}
+			</pre>
+
+
+		</div>
+	</body>
+</html>

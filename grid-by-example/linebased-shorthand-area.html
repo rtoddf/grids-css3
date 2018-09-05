@@ -9,15 +9,13 @@
 
 		<title>rtodd - CSS3 Grids</title>
 		<link href="../css/base-learn.css" rel="stylesheet" />
-		<link href="../css/grid-by-example/definegrid.css" rel="stylesheet" />
+		<link href="../css/grid-by-example/linebased-shorthand-area.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div class="container">
-			<h3>Define a Grid</h3>
-			<p>To define a Grid use display:grid or display:inline-grid on the parent element. You can then create a grid using the grid-template-columns and grid-template-rows properties.</p>
-			<p>I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.</p>
-			<p>All direct children of the parent now become grid items and the auto-placement algorithm lays them out, one in each grid cell. Creating extra rows as needed.</p>
+			<h3>Line-based placement shorthand - grid-area</h3>
+			<p>We can achieve the same result as in example 2 and 3 declaring all four values with the grid-area property. Again values are separated with a /. The order of the values is row-start/column-start/row-end/column-end.</p>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
@@ -27,15 +25,40 @@
 				<div class="grid-item f">F</div>
 			</div>
 
+
 <pre>
 .grid {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: auto auto auto;
-	grid-template-columns: auto auto auto;
 	grid-gap: 10px;
 }
+
+.a {
+	grid-area: 1 / 2 / 2 / 3;
+	background-color: orange;
+}
+.b {
+	grid-area: 2 / 2 / 3 / 3;
+	background-color: purple;
+}
+.c {
+	grid-area: 2 / 3 / 3 / 4;
+	background-color: #003264;
+}
+.d {
+	grid-area: 1 / 1 / 2 / 2;
+	background-color: #ae0000;
+}
+.e {
+	grid-area: 2 / 1 / 3 / 2;
+	background-color: #baba71;
+}
+.f {
+	grid-area: 1 / 3 / 2 / 4;
+	background-color: #ef6817;
+}
 			</pre>
+
 
 		</div>
 	</body>

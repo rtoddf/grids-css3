@@ -29,8 +29,8 @@ pre {
 }
 
 .grid {
-    display: grid;
-    grid-gap: 20px;
+    /* display: grid;
+    grid-gap: 20px; */
     background-color: #fff;
     color: #444;
 }

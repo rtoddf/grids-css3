@@ -15,6 +15,7 @@
 	<body>
 		<div class="container">
 			<h3>Grid - Line Based</h3>
+			<p>Using the Grid I defined in example 1, I am positioning the elements in my markup (six divs with a class of grid-item and classes from a to f) using line-based placement properties. I've also added a background color to help visualize the boxes. This example is more verbose than it needs to be as a demonstration of the properties. In reality if an item will only span one grid track you may omit the -end value.</p>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
@@ -27,88 +28,56 @@
 
 <pre>
 .grid {
-	grid-template-columns: auto auto auto;
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
 }
 
 .a {
-	/*shorthand*/
-	grid-area: 1 / 2 / 2 / 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
 	background-color: orange;
-	/*
-		grid-row-start: 1;
-		grid-row-end: 2;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	*/
 }
 .b {
-	/*shorthand*/
-	grid-area: 2 / 2 / 3 / 3;
 	background-color: purple;
-
-	/*
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	*/
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 .c {
-	/*shorthand*/
-	grid-area: 2 / 3 / 3 / 4;
 	background-color: #003264;
-	
-	/* longhand
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 3;
-		grid-column-end: 4;
-	*/
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
 }
 
 .d {
-	/* mediumhand */
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
 	background-color: #ae0000;
-
-	/* longhand
-		grid-row-start: 1;
-		grid-row-end: 2;
-		grid-column-start: 1;
-		grid-column-end: 2;
-		
-	*/
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
 }
 
 .e {
-	/* mediumhand */
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
 	background-color: #baba71;
-
-	/* longhand
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 1;
-		grid-column-end: 2;
-	*/
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
 }
 
 .f {
-	/* mediumhand */
-	grid-row: 1 / 2;
-	grid-column: 3 / 4;
 	background-color: #ef6817;
-
-	/* longhand
-		grid-row-start: 1;
-		grid-row-end: 2;
-		grid-column-start: 3;
-		grid-column-end: 4;
-	*/
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
 }
-
 			</pre>
 
 
