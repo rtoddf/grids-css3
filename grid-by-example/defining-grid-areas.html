@@ -15,7 +15,12 @@
 	<body>
 		<div class="container">
 			<h3>Defining grid areas</h3>
-			<p>We can create named areas on the grid to put content into.</p>
+			<p>We can create named areas on the grid to put content into. To do this we first assign elements in our markup to a Grid
+			Area, using the grid-area property.</p>
+			<p>We can then use the grid-template-areas property to describe where on the Grid these elements should sit.</p>
+			<p>Repeating the name of an area indicates that the area spans that grid track. Using a . or a sequence like ....
+			indicates an empty track. Such as the very first cell on this grid.</p>
+			<p><strong>IE - Grid-template-areas isn't supported, but we can convert it to work with grid lines.</strong></p>
 			<div class="grid">
 				<div class="grid-item header">Header</div>
 				<div class="grid-item sidebar">Sidebar</div>

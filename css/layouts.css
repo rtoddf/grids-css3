@@ -76,6 +76,11 @@ ul {
     list-style: none;
 }
 
+li a {
+    background: rgba(200,200,200, .3);
+    border-bottom: 1px dotted #999;
+}
+
 /* index */
 [data-theme="index"] ul {
     margin-bottom: 20px;
