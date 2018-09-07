@@ -15,6 +15,11 @@
 	<body>
 		<div class="container">
 			<h3>Line-based placement named lines with spans</h3>
+			<p>You can give lines the same name and then use the span keyword to target lines of a certain name. This is really useful
+			if you want to create a complex grid with multiple content tracks and gutters.</p>
+			<p>I have made a slightly larger grid here and have named all of the Grid Lines before the content tracks with col and all
+			of the lines before the row tracks with row. I can then start at a certain column line by using col &lt;line number&gt; and
+				span by saying span &lt;number of lines&gt;.</p>
 			<div class="grid">
 				<div class="grid-item a">A</div>
 				<div class="grid-item b">B</div>
@@ -25,31 +30,47 @@
 
 			<pre>
 .grid {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+
+	-ms-template-columns: repeat(4, [col] 1fr);
 	grid-template-columns: repeat(4, [col] 1fr);
-	grid-template-rows: repeat(3, [row] 1fr  );
+	-ms-template-rows: repeat(3, [row] 1fr);
+	grid-template-rows: repeat(3, [row] 1fr);
 }
 
 .a {
+	-ms-grid-column: col / span 2;
+	-ms-grid-row: row;
 	grid-column: col / span 2;
-	grid-row: row ;
+	grid-row: row;
 }
 
 .b {
-	grid-column: col 3 / span 2 ;
-	grid-row: row ;
+	-ms-grid-column: col 3 / span 2;
+	-ms-grid-row: row;
+	grid-column: col 3 / span 2;
+	grid-row: row;
 }
 
 .c {
-	grid-column: col ;
-	grid-row: row 2 ;
+	-ms-grid-column: col;
+	-ms-grid-row: row 2;
+	grid-column: col;
+	grid-row: row 2;
 }
 
 .d {
-	grid-column: col 2 / span 3 ;
-	grid-row: row 2 ;
+	-ms-grid-column: col 2 / span 3;
+	-ms-grid-row: row 2;
+	grid-column: col 2 / span 3;
+	grid-row: row 2;
 }
 
 .e {
+	-ms-grid-column: col / span 4;
+	-ms-grid-row: row 3;
 	grid-column: col / span 4;
 	grid-row: row 3;
 }
