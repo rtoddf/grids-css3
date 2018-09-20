@@ -1,0 +1,91 @@
+/**
+ *  grid css, which lays out the columns, it contains
+ *
+ *  grid layouts
+ */
+
+ $grid-spacing: 30px;
+ $min-column-width: 150px;
+ 
+ // placeholder for styles for old browsers
+ 
+ // medium grid breakpoint
+ @media (min-width: $md-breakpoint) {
+     .grid {
+         display: grid;
+         grid-gap: $grid-spacing;
+         // default same as one column
+         grid-template-columns: [start-1 start-2 start-3] 1fr [end-1 end-2 end-3];
+         // make row the minimum it needs to be
+         grid-template-rows: min-content;
+         // makes columns go to the top, filling in available space (somewhat like removing clearfix)
+         grid-auto-flow: dense;
+ 
+ 
+         // NOTE: UNTIL LAYOUT DESIGNS ARE IN WE HAVE TO USE TEMPORARY COLUMNS
+         //       THE COLUMNS WILL CHANGE LATER, BASED ON APPROVED LAYOUTS
+         &--2-col {
+             grid-template-columns: [start-1 start-3] minmax($min-column-width, 1fr) [end-1 end-3 start-2 start-4] minmax($min-column-width, 1fr) [end-2 end-4];
+         }
+ 
+         &--2-col-6040 {
+             // grid-template-columns: [start-1 start-3] minmax($min-column-width, 1fr) [end-1 end-3 start-2 start-4] minmax($min-column-width, 1fr) [end-2 end-4];
+             // grid-template-columns: [start-1] minmax($min-column-width, 1fr) [start-2] minmax($min-column-width, 1fr) [start-3] minmax($min-column-width, 1fr) [start-4] minmax($min-column-width, 1fr) [start-5] minmax($min-column-width, 1fr) [end-5];
+             grid-template-columns: repeat(5, [col] 1fr);
+ 
+             .grid__item-1 {
+                 grid-column: col / span 3;
+             }
+ 
+             .grid__item-2 {
+                 grid-column: col 4 / span 2;
+             }
+         }
+ 
+         &--3-col {
+             grid-template-columns: [start-1] minmax($min-column-width, 1fr) [end-1 start-2] minmax($min-column-width, 1fr) [end-2 start-3 start-4] minmax($min-column-width, 1fr) [end-3 end-4];
+         }
+ 
+         &--4-col {
+             grid-template-columns: [start-1] minmax($min-column-width, 1fr) [end-1 start-2] minmax($min-column-width, 1fr) [end-2 start-3] minmax($min-column-width, 1fr) [end-3 start-4] minmax($min-column-width, 1fr) [end-4];
+         }
+ 
+         &--story {
+             grid-template-columns: [start-1 start-2 start-3] auto [end-1 end-2 end-3 start-4] 300px [end-4];
+         }
+ 
+ 
+         // Grid items list; Grid items should be placed by the columns above using start/end position
+         &__item-1 {
+             grid-column: start-1 / end-1;
+         }
+ 
+         &__item-2 {
+             grid-column: start-2 / end-2;
+         }
+ 
+         &__item-3 {
+             grid-column: start-3 / end-3;
+         }
+ 
+         &__item-4 {
+             grid-column: start-4 / end-4;
+         }
+     }
+ }
+ 
+ // large grid breakpoint
+ @media (min-width: $md-breakpoint) {
+     .grid {
+         // TBD
+     }
+ }
+ 
+ // removes style that is needed for old browsers
+ @supports (display: grid) {
+     margin: 0;
+     width: auto;
+ }
+
+ /* https://www.youtube.com/watch?v=tFKrK4eAiUQ
+https://www.youtube.com/watch?v=dQHtT47eH0M */
