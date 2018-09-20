@@ -1,0 +1,56 @@
+html {
+    font-family: 'Average', serif;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+.container {
+    width: 50%;
+}
+
+.tease {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(5, [col] 1fr) ;
+	grid-template-rows: repeat(5, [row] 1fr);
+}
+
+
+.tease__img {
+    grid-column: col / span 5;
+    grid-row: row / span 4;
+}
+
+.filler {
+    border-radius: 0.625rem;
+}
+
+.tease__text {
+    grid-column: col / span 5;
+    grid-row: row 3 / span 1;
+    z-index: 5;
+    margin: 1.875rem 2.5rem 0;
+    padding: 1.25rem;
+    background-color: #fff;
+    
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.3125rem #999;
+
+    text-align: center;
+}
+
+.details {
+    margin-bottom: 1rem;
+    color: #999;
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+.subhead {
+    color: #003264;
+}
+
