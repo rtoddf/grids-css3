@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00n.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>grid-column-start, grid-column-end, grid-row-start, &amp; grid-row-end</h3>
+
+			<p>Determines a grid item's location within the grid by referring to specific grid lines. grid-column-start/grid-row-start
+			is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.</p>
+			<ul>
+				<li><strong>&lt;line&gt;:</strong> aligns items to be flush with the start edge of their cell</li>
+				<li><strong>span &lt;number&gt;:</strong> the item will span across the provided number of grid tracks</li>
+				<li><strong>span &lt;name&gt;:</strong> the item will span across until it hits the next line with the provided name</li>
+				<li><strong>auto:</strong> indicates auto-placement, an automatic span, or a default span of one</li>
+			</ul>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr [col]);
+	grid-template-rows: repeat(3, 100px [row]);
+}
+
+.item-a {
+	background-color: #ae0000;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+</pre>
+
+			<div class="grid first">
+				<article></article>
+				<article class="item-a"></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr [col]);
+	grid-template-rows: repeat(3, 100px [row]);
+}
+
+.item-b {
+	background-color: #ae0000;
+	grid-column-start: 1;
+	grid-column-end: span 4;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+}
+</pre>
+			
+			<div class="grid second">
+				<article></article>
+				<article class="item-b"></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+<!--
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: center;
+}
+</pre>
+			
+			<div class="grid third">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: stretch;
+}
+</pre>
+			
+			<div class="grid fourth">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<p>This behavior can also be set on individual grid items via the justify-self property.</p> -->
+		</div>
+	</body>
+</html>
