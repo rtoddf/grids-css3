@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00d.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>grid-column-gap &amp; grid-row-gap</h3>
+
+			<p>Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the
+			columns/rows.</p>
+			<ul>
+				<li><strong>&lt;line-size&gt;:</strong> a length value</li>
+			</ul>
+
+			<pre>
+.container {
+	grid-template-columns: 100px 100px auto 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+}
+</pre>
+
+			<div class="grid first">
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+
+			<p>The gutters are only created between the columns/rows, not on the outer edges.</p>
+			<p><em>Note: The grid- prefix will be removed and grid-column-gap and grid-row-gap renamed to column-gap and row-gap. The
+			unprefixed properties are already supported in Chrome 68+, Safari 11.2 Release 50+ and Opera 54+.</em></p>
+
+
+
+			<h3>grid-gap</h3>
+			
+			<p>A shorthand for grid-row-gap and grid-column-gap</p>
+			<ul>
+				<li><strong>&lt;grid-row-gap&gt; &lt;grid-column-gap&gt;:</strong> a length value</li>
+			</ul>
+			
+<pre>
+.container {
+	grid-template-columns: 100px 100px auto 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-gap: 25px 10px;
+}
+</pre>
+			
+			<div class="grid second">
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+			
+			<p>If no grid-row-gap is specified, it's set to the same value as grid-column-gap</p>
+			<p><em>Note: The grid- prefix will be removed and grid-gap renamed to gap. The unprefixed property is already supported in
+			Chrome 68+, Safari 11.2 Release 50+ and Opera 54+.</em></p>
+		</div>
+	</body>
+</html>

@@ -73,8 +73,19 @@ article {
     margin: 0 auto;
 }
 
-.grid {
+.grid.first {
 	display: grid;
 	grid-template-columns: [first] 1fr [line2] 1fr [line3] 300px [line4] 1fr [line5] 1fr [end];
 	/* grid-template-rows: 100px 100px; */
+}
+
+.grid.second {
+	display: grid;
+	grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 300px [end-3 start-4] 1fr [end-4 start-5] 1fr [end-5];
+	/* grid-template-rows: 100px 100px; */
+}
+
+.grid.third {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr [start]) [start-3] 300px [end-3] repeat(2, 1fr [end]);
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00f.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>align-items</h3>
+
+			<p>Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis).
+			This value applies to all grid items inside the container.</p>
+			<ul>
+				<li><strong>start:</strong> aligns items to be flush with the start edge of their cell</li>
+				<li><strong>end:</strong> aligns items to be flush with the end edge of their cell</li>
+				<li><strong>center:</strong> aligns items in the center of their cell</li>
+				<li><strong>stretch:</strong> fills the whole height of the cell (this is the default)</li>
+			</ul>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: start;
+}
+</pre>
+
+			<div class="grid first">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: end;
+}
+</pre>
+			
+			<div class="grid second">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: center;
+}
+</pre>
+			
+			<div class="grid third">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col]);
+	grid-template-rows: repeat(2, 100px [row]);
+	grid-gap: 20px;
+}
+
+.grid article {
+	display: grid;
+	align-items: stretch;
+}
+</pre>
+			
+			<div class="grid fourth">
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+				<article><img src="../images/nico-tortorella.jpg"></article>
+			</div>
+
+			<p>This behavior can also be set on individual grid items via the justify-self property.</p>
+		</div>
+	</body>
+</html>
