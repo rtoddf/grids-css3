@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00b.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>grid-template-columns &amp; grid-template-rows</h3>
+
+			<p>Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.</p>
+			<ul>
+				<li><strong>&lt;track-size&gt;:</strong> can be a length, a percentage, or a fraction of the free space in the grid (using the fr unit)</li>
+				<li><strong>&lt;line-name&gt;:</strong> an arbitrary name of your choosing</li>
+			</ul>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: 100px 100px auto 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+}
+</pre>
+
+			<div class="grid first">
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+
+			<p>When you leave an empty space between the track values, the grid lines are automatically assigned positive and negative numbers:</p>
+			<img class="diagram" src="../images/learn/grid-numbers.png" />
+
+			<p>But you can choose to explicitly name the lines. Note the bracket syntax for the line names:</p>
+			<pre>
+.grid {
+	grid-template-columns: [first] 100px [line2] 100px [line3] auto [col4-start] 100px [five] 100px [end];
+	grid-template-rows: [row1-start] 100px [row1-end] 100px [third-line] 100px [last-line];
+}
+</pre>
+			<img class="diagram" src="../images/learn/grid-names.png" />
+
+			<p>Note that a line can have more than one name. For example, here the second line will have two names: row1-end and row2-start:</p>
+			<pre>
+.grid {
+	grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+}
+</pre>
+
+		</div>
+	</body>
+</html>

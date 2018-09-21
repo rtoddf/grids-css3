@@ -1,0 +1,26 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 100px 100px auto 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	margin: 1.25rem 0;
+
+	/* fr is fraction of the grid
+	// grid-column-gap: 1px;
+	// grid-row-gap: 1px;
+	 */
+}
+
+.grid.first {
+	grid-template-columns: 100px 100px auto 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+}
+
+.grid.second {
+	grid-template-columns: [first] 100px [line2] 100px [line3] auto [col4-start] 100px [five] 100px [end];
+	grid-template-rows: [row1-start] 100px [row1-end] 100px [third-line] 100px [last-line];
+}

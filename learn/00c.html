@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00c.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>grid-template-columns &amp; grid-template-rows (cont)</h3>
+
+			<p>If your definition contains repeating parts, you can use the repeat() notation to streamline things:</p>
+			<pre>
+.grid {
+	grid-template-columns: repeat(3, 20px [col-start]);
+}
+</pre>
+
+			<p>Which is equivalent to this:</p>
+			<pre>
+.grid {
+	grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+}
+</pre>
+
+			<p>If multiple lines share the same name, they can be referenced by their line name and count.</p>
+			<pre>
+.grid {
+	grid-column-start: col-start 2;
+}
+</pre>
+
+			<p>The fr unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:</p>
+			<pre>
+.grid {
+	grid-template-columns: 1fr 1fr 1fr;;
+}
+</pre>
+
+			<p>The free space is calculated after any non-flexible items. In this example the total amount of free space available to the fr units doesn't include the 50px:</p>
+			<pre>
+.grid {
+	grid-template-columns: 1fr 50px 1fr 1fr;
+}
+</pre>
+<!--
+			<div class="grid first">
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div> -->
+
+		</div>
+	</body>
+</html>

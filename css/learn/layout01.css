@@ -1,0 +1,98 @@
+// https://css-tricks.com/css-grid-replace-flexbox/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+	background: #f7f7f7;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h3 {
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+img {
+	width: 100%;
+	border: 1px solid #dadada;
+}
+
+.lead-image-holder {
+	margin-bottom: 15px;
+}
+
+.lead-image-holder:last-child {
+	margin-bottom: 0;
+}
+
+.caption {
+	color: #888;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+figcaption {
+	color: #888;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-grid {
+	display: grid;
+	max-width: 80%;
+	grid-template-columns: 4fr 8fr;
+	grid-template-rows: 4fr .5fr 4fr;
+	grid-gap: 20px;
+
+	padding: 30px;
+	background: #fff;
+}
+
+.content,
+.sidebar,
+.ad {
+	padding: 20px;
+	background: #f7f7f7;
+	border: 1px solid #dadada;
+}
+
+.ad {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background: #666;
+	color: #fff;
+}
+
+@media (max-width: 480px) {
+	.flex-grid {
+		max-width: 100%;
+		// grid-template-columns: 4fr 8fr;
+		// grid-template-rows: 4fr .5fr 4fr;
+		// grid-gap: 20px;
+
+		padding: 0;
+		// background: #fff;
+	}
+}
