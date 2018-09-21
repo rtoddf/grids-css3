@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>rtodd - CSS3 Grids</title>
+		<link href="../css/learn/base.css" rel="stylesheet" />
+		<link href="../css/learn/00o.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3>grid-column &amp; grid-row</h3>
+			<p>Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.</p>
+			<ul>
+				<li><strong>&lt;start-line&gt; / &lt;end-line&gt;:</strong> each one accepts all the same values as the longhand version, including span</li>
+			</ul>
+
+			<pre>
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr [col]);
+	grid-template-rows: repeat(3, 100px [row]);
+}
+
+.item-a {
+	background-color: #baba71;
+	grid-column: 2 / span 3;
+	grid-row: 3 / 4;
+}
+</pre>
+
+			<div class="grid first">
+				<article></article>
+				<article class="item-a"></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</div>
+		</div>
+	</body>
+</html>
