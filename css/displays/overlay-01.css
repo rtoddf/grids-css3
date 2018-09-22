@@ -4,11 +4,8 @@ html {
 }
 
 h3 {
+    margin: 0;
     font-size: 1.75rem;
-}
-
-.container {
-    width: 50%;
 }
 
 .tease {
@@ -16,13 +13,12 @@ h3 {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(5, [col] 1fr) ;
-	grid-template-rows: repeat(5, [row] 1fr);
+	grid-template-rows: repeat(3, [row] auto);
 }
-
 
 .tease__img {
     grid-column: col / span 5;
-    grid-row: row / span 4;
+    grid-row: row / span 3;
 }
 
 .filler {
@@ -31,12 +27,12 @@ h3 {
 
 .tease__text {
     grid-column: col / span 5;
-    grid-row: row 3 / span 1;
+    grid-row: row 3 / span 2;
     z-index: 5;
     margin: 1.875rem 2.5rem 0;
     padding: 1.25rem;
     background-color: #fff;
-    
+
     border-radius: 0.625rem;
     box-shadow: 0 0 0.3125rem #999;
 
@@ -54,3 +50,31 @@ h3 {
     color: #003264;
 }
 
+/* [data-col="1"] figure .filler {
+    padding-bottom: 36%;
+}
+
+[data-col="1"] figure .filler > img {
+    height: auto;
+    top: 35%;
+} */
+
+[data-col="3"] h3,
+[data-col="4"] h3 {
+    font-size: 1.25rem;
+}
+
+[data-col="3"] .details,
+[data-col="4"] .details {
+    font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .details {
+        font-size: 0.875rem;
+    }
+}
