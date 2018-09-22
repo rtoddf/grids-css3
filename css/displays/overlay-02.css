@@ -8,16 +8,24 @@ h3 {
     font-size: 1.75rem;
 }
 
-.tease-list--large-item-under .tease.layout-grid {
+.container {
+    border: 1px solid #333;
+}
+
+.tease-list--large-item-left .tease.layout-grid {
 	display: -ms-grid;
 	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(5, [col] 1fr) ;
+    grid-gap: 10px;
+    /* changed */
+    grid-template-columns: repeat(8, [col] 1fr) ;
+    /* changed */
 	grid-template-rows: repeat(3, [row] auto);
 }
 
-.tease-list--large-item-under .tease.layout-grid .tease__img {
-    grid-column: col / span 5;
+.tease-list--large-item-left .tease.layout-grid .tease__img {
+    /* changed */
+    grid-column: col 3 / span 7;
+    /* changed */
     grid-row: row / span 3;
 }
 
@@ -25,17 +33,21 @@ h3 {
     border-radius: 0.625rem;
 }
 
-.tease-list--large-item-under .tease.layout-grid .tease__text {
-    grid-column: col / span 5;
-    grid-row: row 3 / span 2;
-    z-index: 5;
-    margin: 1.875rem 2.5rem 0;
-    padding: 1.25rem;
-    background-color: #fff;
+.tease-list--large-item-left .tease.layout-grid .tease__text {
+    /* changed */
+    grid-column: col / span 3;
+    grid-row: row / span 3;
+    margin: 1.875rem 5rem 1.875rem 0;
 
+    display: grid;
+    align-items: center;
+    /* changed */
+    z-index: 5;
+    padding: 1.25rem;
+
+    background-color: #fff;
     border-radius: 0.625rem;
     box-shadow: 0 0 0.3125rem #999;
-
     text-align: center;
 }
 

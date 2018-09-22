@@ -10,7 +10,7 @@ img {
 
 /* image holder */
 figure {
-    margin: 0 0 0.625rem;
+    margin: 0;
 }
 
 figure .filler {
@@ -60,19 +60,23 @@ figure .filler > img {
 .grid,
 .grid[data-col="1"] {
     -ms-grid-columns: repeat(1, [col] 1fr);
-	grid-template-columns: repeat(1, [col] 1fr);
+    grid-template-columns: [start-1] 1fr [end-2];
+
+
+	/* grid-template-columns: repeat(1, [col] 1fr); */
 }
 
 [data-col="2"] {
-	grid-template-columns: repeat(2, [col] 1fr);
     -ms-grid-columns: repeat(2, [col] 1fr);
+    grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2];
+	/* grid-template-columns: repeat(2, [col] 1fr); */
 }
 
 [data-col="3"],
 [data-col="1-2"],
 [data-col="2-1"] {
     -ms-grid-columns: repeat(3, [col] 1fr);
-	grid-template-columns: repeat(3, [col] 1fr);
+	grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3];
 }
 
 [data-col="4"],
@@ -81,7 +85,16 @@ figure .filler > img {
 [data-col="2-1-1"],
 [data-col="1-2-1"],
 [data-col="1-1-2"] {
-	grid-template-columns: repeat(4, [col] 1fr);
+	grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3 start-4] 1fr [end-4];
+}
+
+[data-col="2-2-1"] {
+    grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3 start-4] 1fr [end-4 start-5] 1fr [end-5];
+}
+
+[data-col="2-2-1"] > .tease-list:nth-child(1) ,
+[data-col="2-2-1"] > .tease-list:nth-child(2) {
+    grid-column: span 2;
 }
 
 /* media queries */
