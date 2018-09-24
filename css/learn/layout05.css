@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.container {
+	width: 66vw;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 20px;
+}
+
+.grid {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	/* repeat tracks */
+	grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: auto 1fr 1fr auto auto;
+	/* grid-template-columns: repeat(2, 120px 10% 200px);
+	auto-fill
+	grid-template-columns: repeat(auto-fill, 100px);
+	/* auto-fit
+	grid-template-columns: repeat(auto-fit, 100px);
+	grid-template-rows: 4fr .5fr 4fr;*/
+	grid-gap: 1rem;
+	width: 100%;
+	margin: 0 auto;
+	/* transform: rotate(-45deg); */
+}
+
+article {
+	border: 1px solid #666;
+	color: #666;
+}
+
+.heading {
+	grid-column: 1 / span 3;
+
+	font-size: 3.2rem;
+	font-weight: 800;
+	text-align: right;
+	line-height: 3.8rem;
+}
+
+.subhead {
+	grid-column: 3 / 4;
+	grid-row: 2 / 5;
+	color: #ae0000;
+	font-size: 2.6rem;
+	font-weight: 800;
+	line-height: 3rem;
+	writing-mode: vertical-lr;
+	justify-self: end;
+}
+
+.list {
+	grid-column: 1 / span 2;
+	grid-row: 3 / span 2;
+}
+
+.bar {
+	grid-column: 3 / span 4;
+	grid-row: 5;
+}
+
+.bar div {
+	background-color: #ae0000;
+	border-bottom: 25px solid #ae0000;
+}
+
+/* .grid,
+.grid[data-col="1"] {
+	grid-template-columns: [start-1] 1fr [end-1];
+}
+
+.grid[data-col="2"] {
+	grid-template-columns: [start-1] 1fr [end-1 start-1] 1fr [end-2];
+}
+
+.grid[data-col="3"] {
+	grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3];
+}
+
+.grid[data-col="4"] {
+	grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3 start-4] 1fr [end-4];
+} */
+
+/*
+@media (max-width: 600px) {
+	.flex-grid {
+		display: initial;
+		width: 100%;
+		padding: 0;
+	}
+
+	.flex-grid-item {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		border-left: none;
+		border-right: none;
+	}
+} */
