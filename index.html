@@ -8,271 +8,59 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - CSS3 Grids</title>
-		<link href="css/layouts.css" rel="stylesheet" />
-		<link href="css/lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href="../css/layouts.css" rel="stylesheet">
 	</head>
 
-	<body data-theme="index">
+	<body class="home">
 		<div class="container">
-			<div class="grid" data-col="3">
-				<article>
-					<h3>Learning - Properties for the Parent (Grid Container)</h3>
-					<ul>
-						<li><a href="learn/00a.html">display</a></li>
-						<li><a href="learn/00b.html">grid-template-columns &amp; grid-template-rows</a></li>
-						<li><a href="learn/00c.html">grid-template-columns &amp; grid-template-rows (cont)</a></li>
-						<li><a href="learn/00d.html">grid-column-gap &amp; grid-row-gap</a></li>
-
-						<li><a href="learn/00e.html">justify-items</a></li>
-						<li><a href="learn/00f.html">align-items</a></li>
-					</ul>
+			<div class="grid" data-layout="" data-col="4">
+				<article class="panel">
+					<figure>
+						<a href="learn/index.html">
+							<span class="filler">
+								<img src="../images/index-pages/gus-kenworthy.jpg">
+								<div class="content-holder">
+									<h4>Learning I</h4>
+								</div>
+							</span>
+						</a>
+					</figure>
 				</article>
-				<article>
-					<h3>Learning - Properties for the Children (Grid Items)</h3>
-					<ul>
-						<li><a href="learn/00n.html">grid-column-start, grid-column-end, grid-row-start, &amp; grid-row-end</a></li>
-						<li><a href="learn/00o.html">grid-column &amp; grid-row</a></li>
-						<li><a href="learn/00p.html">justify-self</a></li>
-						<li><a href="learn/00q.html">align-self</a></li>
-						<li><a href="learn/00r.html">place-self</a></li>
-					</ul>
+				<article class="panel">
+					<figure>
+						<a href="grid-by-example/index.html">
+							<span class="filler">
+								<img src="../images/index-pages/gus-kenworthy.jpg">
+								<div class="content-holder">
+									<h4>Learning II - Grid by Example</h4>
+								</div>
+							</span>
+						</a>
+					</figure>
 				</article>
-				<article>
-					<h3>Learning - Layout Experimentation</h3>
-					<ul>
-						<li><a href="learn/layout00a.html">Layout 00a</a></li>
-						<li><a href="learn/layout04.html">Layout 04</a></li>
-						<li><a href="learn/layout05.html">Layout 05</a></li>
-					</ul>
-					<ul>
-						<li><a href="learn/layout01.html">Layout 01</a></li>
-						<li><a href="learn/layout02.html">Layout 02</a></li>
-						<li><a href="learn/layout03.html">Layout 03 - 02 another way</a></li>
-					</ul>
+				<article class="panel">
+					<figure>
+						<a href="displays/index.html">
+							<span class="filler">
+								<img src="../images/index-pages/gus-kenworthy.jpg">
+								<div class="content-holder">
+									<h4>Display Classes</h4>
+								</div>
+							</span>
+						</a>
+					</figure>
 				</article>
-			</div>
-
-			<div class="grid" data-col="3">
-				<article>
-					<h3>Learning - Grid by Example</h3>
-					<ul>
-						<li>
-							<a href="grid-by-example/definegrid.html">Define a Grid</a>
-							<p>To define a grid use new values of the display property grid or inline-grid. You can then create column and row tracks.</p>
-						</li>
-						<li>
-							<a href="grid-by-example/linebased.html">Line-based Placement</a>
-							<p>Positioning items on the grid using line numbers</p>
-						</li>
-
-						<li>
-							<a href="grid-by-example/linebased-shorthand.html">Line-based placement shorthand - grid-row and grid-column</a>
-							<p>Positioning items on the grid using the shorthand properties.</p>
-						</li>
-						<li>
-							<a href="grid-by-example/linebased-shorthand-area.html">Line-based placement shorthand - grid-area</a>
-							<p>Positioning items on the grid using the shorthand properties.</p>
-						</li>
-
-
-
-						<li>
-							<a href="grid-by-example/linebasedspanning.html">Line-based placement spanning tracks</a>
-							<p>Positioning items which span more than one grid track.</p>
-						</li>
-						<li>
-							<a href="grid-by-example/linebasedspanning-keyword.html">Line-based placement spanning tracks with the span keyword</a>
-							<p>The span keyword gives us a way to span tracks without needing to specify start and end lines.</p>
-						</li>
-
-
-
-						<li>
-							<a href="grid-by-example/placement-namedlines.html">Line-based placement named lines</a>
-							<p>In addition to using line numbers we can name lines.</p>
-						</li>
-
-
-
-						<li>
-							<a href="grid-by-example/placement-namedlines-withspan.html">Line-based placement named lines with spans</a>
-							<p>You can give lines the same name and then use the span keyword to target lines of a certain name.</p>
-						</li>
-						</ul>
-				</article>
-					<ul>
-						<li>
-							<a href="grid-by-example/using-repeat-notation.html">Using repeat notation</a>
-							<p>Save some time by describing repetitive track listings with repeat.</p>
-						</li>
-						<li>
-							<a href="grid-by-example/explicit-implicit-grid.html">Explicit and Implicit Grid</a>
-							<p>The explicit grid is defined by `grid-template-rows` and `grid-template-columns`.</p>
-						</li>
-
-
-						<li>
-							<a href="grid-by-example/defining-grid-areas.html">Defining grid areas</a>
-							<p>We can create named areas on the grid to put content into.</p>
-							<p><strong>IE - Grid-template-areas isn't supported, but we can convert it to work with grid lines.</strong></p>
-						</li>
-
-						<li>
-							<a href="grid-by-example/no-clearing-required.html">No clearing required</a>
-							<p>Items sit in their own rows on the grid therefore we do not need to clear them as with floats.</p>
-							<p><strong>IE - Grid-template-areas isn't supported, but we can convert it to work with grid lines.</strong></p>
-						</li>
-
-						<li>missing</li>
-
-						<li>
-							<a href="grid-by-example/source-independence.html">Source Independence</a>
-							<p>Placement of items on the grid can be separate to their order in the source</p>
-						</li>
-						<li>
-							<a href="grid-by-example/layering-items.html">Layering items</a>
-							<p>Items can be stacked, and the stacking order controlled with z-index</p>
-						</li>
-
-						<li>missing</li>
-
-						<li>
-							<a href="grid-by-example/auto-placement.html">Grid auto-placement</a>
-							<p>Grid will position grid items automatically on a grid created on the parent.</p>
-						</li>
-						<li>
-							<a href="grid-by-example/autoflow-columns.html">Grid auto-flow column</a>
-							<p>Items are placed in rows by default but you can specify to layout by column.</p>
-						</li>
-					</ul>
-				</article>
-
-				<article>
-					<ul>
-						<li>
-							<a href="grid-by-example/auto-placement-with-placed-items.html">Grid auto-placement mixed with placed items</a>
-							<p>You can mix auto-placed items with those you give a position to</p>
-						</li>
-
-
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-						<li>missing</li>
-					</ul>
-				</article>
-
-			</div>
-            <div class="grid" data-col="3">
-                <article>
-					<h3>Display classes</h3>
-					<ul>
-
-						<li><a href="displays-03.html">Panel w/text</a></li>
-						<li><a href="displays-03b.html">Panel w/list</a></li>
-						<li><a href="displays-03c.html">Unequal Variations - Panel w/list</a></li>
-						<li><a href="displays-04.html">Main Feature w/ Slide Up</a></li>
-						<li><a href="displays-05.html">Vertical Scroller</a></li>
-					</ul>
-					<ul>
-						<li><a href="displays/checkerboard-01.html">Checkerboard - Simple</a></li>
-						<li><a href="displays/checkerboard-02.html">Checkerboard - Complex</a></li>
-						<li><a href="displays/overlay-01.html">Overlay 01</a></li>
-						<li><a href="displays/overlay-02.html">Overlay 02</a></li>
-						<li><a href="displays/five-item-feature01.html">Five Item Feature</a></li>
-						<!-- <li><a href="displays-rectangle00a.html">Rectangle - Simple</a></li> -->
-					</ul>
-
-					<ul>
-						<li><a href="displays/mosaic-01.html">Mosaic 01</a></li>
-					</ul>
-
-					<h3>Combinations</h3>
-					<ul>
-						<li><a href="combos-01.html">Combo Layout w/ Vertical Scroller</a></li>
-						<li><a href="combos-02.html">Column layout - combo</a></li>
-					</ul>
-
-					<h3>Gallery Trials</h3>
-					<ul>
-						<li><a href="displays-02.html">Light Box - Simple</a></li>
-						<li><a href="displays-gallery01a.html">Gallery Trial 01 - no jquery</a></li>
-						<li><a href="displays-gallery00a.html">Gallery Trial 00 - no jquery</a></li>
-						<li><a href="displays-gallery01b.html">Gallery Trial 01</a></li>
-					</ul>
-
-					<h3>grid play</h3>
-					<p>Combinations for the grid display class</p>
-					<ul>
-						<li><a href="responsive-gridplay00a.html">Grid Play 00a</a></li>
-						<li><a href="responsive-gridplay01.html">Grid Play 01</a></li>
-
-						<li><a href="responsive-gridplay02a.html">Grid Play 02a</a></li>
-					</ul>
-				</article>
-				<article>
-					<h3>Layouts</h3>
-
-					<h3>responsive</h3>
-					<p>Combination of grid ad flexbox for responsiveness</p>
-					<ul>
-						<li><a href="responsive03.html">Responsive 03</a></li>
-						<li><a href="responsive04.html">Responsive 04</a></li>
-						<li><a href="responsive05.html">Responsive 05</a></li>
-						<li><a href="responsive06.html">Responsive 06</a></li>
-					</ul>
-
-					<ul>
-						<li><a href="layouts-01.html">Even Combos (ones)</a></li>
-						<li><a href="layouts-01b.html">Even Combos (twos)</a></li>
-						<li><a href="layouts-01c.html">Even Combos (threes)</a></li>
-						<li><a href="layouts-01d.html">Even Combos (fours)</a></li>
-						<li><a href="layouts-01e.html">Even Combos (fives)</a></li>
-						<li><a href="layouts-01f.html">Even Combos (Sixes)</a></li>
-						<li><a href="layouts-02b.html">Uneven Combos (twos)</a></li>
-						<li><a href="layouts-02c.html">Uneven Combos (threes)</a></li>
-						<li><a href="layouts-02d.html">Uneven Combos (fours)</a></li>
-						<li><a href="layouts-02e.html">Uneven Combos (fives)</a></li>
-					</ul>
-					<ul>
-						<li><a href="layouts-03.html">Equal, simple combinations - square images</a></li>
-						<li><a href="layouts-03a.html">Equal Square Images - no margin</a></li>
-						<li><a href="layouts-03b.html">Equal Square Images - multi-row</a></li>
-						<li><a href="layouts-03c.html">Unequal Square Images</a></li>
-					</ul>
-
-					<h3>Trials</h3>
-					<ul>
-						<li><a href="lightbox02b.html">Lightbox</a></li>
-						<li><a href="responsive04.html">Responsive 04</a></li>
-					</ul>
-				</article>
-				<article>
-					<h3>Responsive Images</h3>
-					<ul>
-						<li><a href="responsive-images01.html">Responsive Images 01</a></li>
-						<li><a href="responsive-images01b.html">Responsive Images 01b</a></li>
-						<li><a href="responsive-images02.html">Responsive Imags and Lazy Load 01</a></li>
-						<li><a href="responsive-images02b.html">Responsive Imags and Lazy Load 01b</a></li>
-					</ul>
+				<article class="panel">
+					<figure>
+						<a href="index-bu.html">
+							<span class="filler">
+								<img src="../images/index-pages/gus-kenworthy.jpg">
+								<div class="content-holder">
+									<h4>Layouts</h4>
+								</div>
+							</span>
+						</a>
+					</figure>
 				</article>
 			</div>
 		</div>
