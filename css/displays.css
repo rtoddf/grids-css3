@@ -200,7 +200,9 @@ ul.video-playlist li:after {
 a,
 .panel ul li a {
     padding: 0;
+    background-color: transparent;
     color: #333;
+    border: none;
     font-weight: 600;
     text-decoration: none;
 }
@@ -208,7 +210,7 @@ a,
 a:hover,
 .panel ul li a:hover {
     background: transparent;
-    color: #1955a5;
+    color: #666;
 }
 
 .panel ul li:after {
