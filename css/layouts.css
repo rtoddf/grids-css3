@@ -205,7 +205,8 @@ article {
 }
 
 /* twos */
-[data-col="2-1"] > article:nth-child(1) {
+[data-col="2-1"] > article:nth-child(1),
+[data-col="2-1"] > div:nth-child(1) {
     grid-column: span 2;
 }
 
@@ -472,7 +473,7 @@ figcaption {
 
     [data-col="1-2-1"] > article:nth-child(3) {
         grid-column: span 2;
-        
+
     }
 
     [data-col="1-1-2"] > article:nth-child(1),

@@ -606,6 +606,7 @@ a:hover,
 [data-layout="checkerboard-313"] {
     grid-template-columns: repeat(5, [col] 1fr);
     grid-template-rows: repeat(3, [row] auto);
+    padding: 0;
 }
 
 [data-layout="checkerboard-313"] article:nth-child(1) {
