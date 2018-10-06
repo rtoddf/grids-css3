@@ -601,3 +601,14 @@ a:hover,
         font-size: 1.875rem;
     }
 }
+
+/* extra for displays */
+[data-layout="checkerboard-313"] {
+    grid-template-columns: repeat(5, [col] 1fr);
+    grid-template-rows: repeat(3, [row] auto);
+}
+
+[data-layout="checkerboard-313"] article:nth-child(1) {
+    grid-column: col 2 / span 3;
+    grid-row: row 1 / span 3;
+}
