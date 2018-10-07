@@ -648,6 +648,17 @@ a:hover,
     grid-row: row 1 / span 3;
 }
 
+[data-layout="checkerboard-414"] {
+    grid-template-columns: repeat(6, [col] auto);
+    grid-template-rows: repeat(3, [row] 1fr);
+    padding: 0;
+}
+
+[data-layout="checkerboard-414"] article:nth-child(1) {
+    grid-column: col 3 / span 2;
+    grid-row: row 1 / span 2;
+}
+
 .single-rule, .scotch-rule {
 	margin: 0 20px;
     border-left: none;
