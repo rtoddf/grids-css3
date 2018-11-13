@@ -9,10 +9,12 @@
 
 .idcard.grid > div:nth-child(1) {
     grid-column: span 1;
+    align-self: start;
 }
 
 .idcard.grid > div:nth-child(2) {
     grid-column: span 2;
+    align-self: center;
 }
 
 .card {
@@ -43,16 +45,41 @@
     box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
 }
 
-.social i {
+.icon-holder {
+    display: inline-block;
     margin: 5px;
-    padding-top: 10px;
+    padding-top: 8px;
     width: 42px;
-    height: 32px;
+    height: 34px;
     background-image: linear-gradient(to top, #04befe, #4481eb);
     color: #fff;
     border-radius: 50%;
     box-shadow: 0 2px 4px 0 rgba(149, 149, 149, 0.5);
     font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.icon-holder:hover {
+    animation: pulse .5s 0s ease-out;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.0);
+	}
+	30% {
+        transform: scale(0.7);
+	}
+	60% {
+        transform: scale(1.5);
+        opacity: .75;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1;
+	}
 }
 
 .description {
