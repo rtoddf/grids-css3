@@ -8,16 +8,20 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - CSS3 Grids</title>
-		<link href="../css/layouts.css" rel="stylesheet" />
-		<link href="../css/lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href="../../css/layouts.css" rel="stylesheet" />
+		<link href="../../css/displays.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
 	</head>
 
-	<body data-theme="index">
+	<body data-theme="home">
 		<div class="container">
+			<div class="grid">
+				<h2>CSS Grids Learning II</h2>
+			</div>
 
 			<div class="grid" data-col="3">
-				<article>
+				<article class="panel">
 					<h3>Learning - Grid by Example</h3>
 					<ul>
 						<li>
@@ -28,7 +32,6 @@
 							<a href="linebased.html">Line-based Placement</a>
 							<p>Positioning items on the grid using line numbers</p>
 						</li>
-
 						<li>
 							<a href="linebased-shorthand.html">Line-based placement shorthand - grid-row and grid-column</a>
 							<p>Positioning items on the grid using the shorthand properties.</p>
@@ -37,9 +40,6 @@
 							<a href="linebased-shorthand-area.html">Line-based placement shorthand - grid-area</a>
 							<p>Positioning items on the grid using the shorthand properties.</p>
 						</li>
-
-
-
 						<li>
 							<a href="linebasedspanning.html">Line-based placement spanning tracks</a>
 							<p>Positioning items which span more than one grid track.</p>
@@ -48,23 +48,17 @@
 							<a href="linebasedspanning-keyword.html">Line-based placement spanning tracks with the span keyword</a>
 							<p>The span keyword gives us a way to span tracks without needing to specify start and end lines.</p>
 						</li>
-
-
-
 						<li>
 							<a href="placement-namedlines.html">Line-based placement named lines</a>
 							<p>In addition to using line numbers we can name lines.</p>
 						</li>
-
-
-
 						<li>
 							<a href="placement-namedlines-withspan.html">Line-based placement named lines with spans</a>
 							<p>You can give lines the same name and then use the span keyword to target lines of a certain name.</p>
 						</li>
 						</ul>
                 </article>
-                <article>
+                <article class="panel">
 					<ul>
 						<li>
 							<a href="using-repeat-notation.html">Using repeat notation</a>
@@ -112,7 +106,7 @@
 					</ul>
 				</article>
 
-				<article>
+				<article class="panel">
 					<ul>
 						<li>
 							<a href="auto-placement-with-placed-items.html">Grid auto-placement mixed with placed items</a>
