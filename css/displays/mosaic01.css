@@ -13,12 +13,14 @@ li {
     background: #ae0000;
     color: #fff;
     border-radius: 6px;
-    font-size: 1.5625rem;
 }
 
 li p {
     align-self: center;
     padding: 0 40px;
+    font-family: 'Average', serif;
+    font-size: 1.375rem;
+    line-height: normal;
 }
 
 li:nth-child(1) {
