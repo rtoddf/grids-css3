@@ -8,10 +8,6 @@ h3 {
     font-size: 1.75rem;
 }
 
-.container {
-    border: 1px solid #333;
-}
-
 .tease-list--large-item-left .tease.layout-grid {
 	display: -ms-grid;
 	display: grid;
@@ -30,7 +26,8 @@ h3 {
 }
 
 .filler {
-    border-radius: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tease-list--large-item-left .tease.layout-grid .tease__text {
