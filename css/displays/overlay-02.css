@@ -6,6 +6,7 @@ html {
 h3 {
     margin: 0;
     font-size: 1.75rem;
+    color: #333;
 }
 
 .tease-list--large-item-left .tease.layout-grid {
