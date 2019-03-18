@@ -1,3 +1,101 @@
+.grid[data-margin="0"] {
+    grid-gap: 0;
+}
+
+[data-image-layout="square"] {
+    &:after {
+        content: "";
+        float: left;
+        display: block;
+        padding-top: 100%;
+    }
+
+    .tile {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #222;
+        transition: all .3s ease;
+    }
+
+    .image-holder,
+    figure {
+        height: 100%;
+
+        img {
+            width: 102%;
+            height: 102%;
+            max-width: 102%;
+            max-height: 102%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all .6s ease;
+
+            &:hover {
+                width: 110%;
+                height: 110%;
+                max-width: 110%;
+                max-height: 110%;
+                margin: -5%;
+            }
+        }
+    }
+}
+
+// .tile.square img {
+//     object-fit: cover;
+//     display: block;
+//     position: absolute;
+//     top: 25%;
+//     left: 50%;
+
+//     width: 102%;
+//     height: 102%;
+//     max-width: 102%;
+//     max-height: 102%;
+
+//     text-align: center;
+//     cursor: pointer;
+//     transform: translate(-50%, -25%);
+//     transition: all .6s ease;
+// }
+
+.content-holder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 35%; */
+    background: rgba(0,0,0,.5);
+    border-top: 1px solid rgba(255,255,255,.25);
+    color: #fff;
+
+    h4 {
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px;
+        font-size: 0.875rem;
+        line-height: 16px;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
 /* begin panels */
 .panel {
     padding: 20px 20px 10px;
@@ -71,3 +169,29 @@
     }
 }
 /* end panels */
+
+/* begin media-container */
+.media-container {
+    .image-holder {
+        margin: 0;
+        border: 1px solid rgba(255,255,255,.25);
+    }
+
+    .content-holder {
+        display: table;
+        width: 85%;
+        height: auto;
+        min-height: 35px;
+        bottom: -10%;
+        margin: 0 auto;
+        background: rgba(34,34,34,.9);
+        border: 1px solid rgba(255,255,255,.25);
+        text-align: center;
+
+        p {
+            display: table-cell;
+            padding: 0;
+            vertical-align: middle;
+        }
+    }
+}
