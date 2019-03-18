@@ -156,4 +156,117 @@
   vertical-align: middle;
 }
 
+/* end media-container */
+/* begin id cards */
+[data-theme=narrow] .container {
+  width: 70%;
+}
+
+.idcard.grid {
+  grid-template-columns: repeat(3, [col] 1fr);
+}
+.idcard.grid > div:nth-child(1) {
+  grid-column: span 1;
+  align-self: start;
+}
+.idcard.grid > div:nth-child(2) {
+  grid-column: span 2;
+  align-self: center;
+}
+.idcard .card {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.idcard .card h4 {
+  margin: 20px 0 0;
+  font-size: 35px;
+}
+.idcard .card h5 {
+  margin: 0 0 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20px;
+  line-height: 1.75;
+  letter-spacing: -0.5px;
+}
+.idcard .card figure img {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
+}
+.idcard .card .icon-holder {
+  display: inline-block;
+  margin: 5px;
+  padding-top: 5px;
+  width: 42px;
+  height: 42px;
+  background-image: linear-gradient(to top, #04befe, #4481eb);
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(149, 149, 149, 0.5);
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.idcard .card .icon-holder:hover {
+  animation: pulse 0.5s 0s ease-out;
+}
+.idcard .description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+}
+.idcard .description p:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  [data-theme=narrow] .container {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .idcard.grid {
+    grid-template-columns: repeat(1, [col] 1fr);
+  }
+  .idcard.grid > div:nth-child(1),
+.idcard.grid > div:nth-child(2) {
+    grid-column: span 1;
+  }
+  .idcard .card {
+    width: auto;
+  }
+  .idcard .description {
+    font-size: 16px;
+    line-height: 2.25;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.7);
+  }
+  60% {
+    transform: scale(1.5);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* end id cards */
+
 /*# sourceMappingURL=displays.css.map */
