@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  border: 1px solid #222;
+}
+
+ul,
+ol {
+  margin-bottom: 1.429rem;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.2857rem;
+}
+
+pre {
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+  background-color: #dedede;
+  color: #222;
+  border: 0.0625rem solid #666;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+}
+
+article {
+  padding: 20px;
+  border: 0.0625rem solid #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.learn00 .grid {
+  display: grid;
+}
+.learn00 .grid.first {
+  grid-template-columns: [first] 1fr [line2] 1fr [line3] 300px [line4] 1fr [line5] 1fr [end];
+}
+.learn00 .grid.second {
+  grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 300px [end-3 start-4] 1fr [end-4 start-5] 1fr [end-5];
+}
+.learn00 .grid.third {
+  grid-template-columns: repeat(2, 1fr [start]) [start-3] 300px [end-3] repeat(2, 1fr [end]);
+}
+
+.learn04 .grid {
+  display: grid;
+  grid-gap: 1.5625rem;
+  padding: 1.5625rem;
+}
+.learn04 .grid,
+.learn04 .grid[data-col="1"] {
+  grid-template-columns: [start-1] 1fr [end-1];
+}
+.learn04 .grid[data-col="2"] {
+  grid-template-columns: [start-1] 1fr [end-1 start-1] 1fr [end-2];
+}
+.learn04 .grid[data-col="3"] {
+  grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3];
+}
+.learn04 .grid[data-col="4"] {
+  grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3 start-4] 1fr [end-4];
+}
+.learn04 .grid[data-col="5"],
+.learn04 .grid[data-col="2-2-1"] {
+  grid-template-columns: [start-1] 1fr [end-1 start-2] 1fr [end-2 start-3] 1fr [end-3 start-4] 1fr [end-4 start-5] 1fr [end-5];
+}
+.learn04 .grid[data-col="2-2-1"] > article:nth-child(1) {
+  grid-column: start-1/end-2;
+}
+.learn04 .grid[data-col="2-2-1"] > article:nth-child(2) {
+  grid-column: start-3/end-4;
+}
+
+/*# sourceMappingURL=learning.css.map */
