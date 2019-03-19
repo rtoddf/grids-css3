@@ -323,6 +323,28 @@ div {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+[data-layout=checkerboard-313] {
+  grid-template-columns: repeat(5, [col] 1fr);
+  grid-template-rows: repeat(3, [row] auto);
+  padding: 0;
+}
+
+[data-layout=checkerboard-313] article:nth-child(1) {
+  grid-column: col 2/span 3;
+  grid-row: row 1/span 3;
+}
+
+[data-layout=checkerboard-414] {
+  grid-template-columns: repeat(6, [col] auto);
+  grid-template-rows: repeat(3, [row] 1fr);
+  padding: 0;
+}
+
+[data-layout=checkerboard-414] article:nth-child(1) {
+  grid-column: col 3/span 2;
+  grid-row: row 1/span 2;
+}
+
 /* end combinations */
 figure .filler {
   display: inline-block;
