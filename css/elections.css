@@ -1,0 +1,95 @@
+body {
+  background: #fff;
+  color: #333;
+}
+
+figure {
+  max-height: 195px;
+}
+
+.grid {
+  padding: 0;
+  grid-gap: 0;
+}
+
+.card.election {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.democrat {
+  background-image: linear-gradient(#003264, #0074e7);
+}
+
+.democrat .party {
+  background: #003264;
+}
+
+.republican {
+  background-image: linear-gradient(#ae0000, #e14f4f);
+}
+
+.republican .party {
+  background: #ae0000;
+}
+
+.independent {
+  background-image: linear-gradient(#808080, #c2c2c2);
+}
+
+.independent .party {
+  background: #808080;
+}
+
+.card.election > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, [col] 1fr);
+  border: 1px solid #333;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.percent {
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.votes {
+  font-size: 28px;
+}
+
+/* .party.democrat {
+  background-color: #003264;
+} */
+
+.party span {
+  display: inline-block;
+  transform: rotate(-90deg) translateX(-115%) translateY(4px);
+  transform-origin: top left;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.name {
+  grid-column: span 2;
+  padding: 5px 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+
+/*  */
+
+/* .card div:nth-child(1) {
+  width: 10%;
+} */
